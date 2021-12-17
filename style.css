@@ -5,7 +5,7 @@
     padding: 0px;
 }
 #navbar {
-    width: 1670px;
+    width: 1920px;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@
 /* MAIN */  
 
 #slider{
-    width: 1670px;
+    width: 1920px;
     max-height: 650px;
     display: flex;
 }
@@ -75,7 +75,7 @@
     border: 0px;
     border-radius: 10px;
     position: absolute;
-    margin-left: 710px;
+    margin-left: 835px;
     margin-top: 300px;
     
 }
