@@ -62,7 +62,11 @@
 }
 
 /* MAIN */  
-
+#main{
+    background-color: rgb(32, 31, 31);
+    width: 1920px;
+}
+/* slider */
 #slider{
     width: 1920px;
     max-height: 650px;
@@ -84,6 +88,138 @@
     width: 1990px;
     height: 650px;
 
+}
+
+/*  products */
+#products{
+    display: flex;
+    
+    width: 1400px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-wrap: wrap;
+    background-color: rgb(59, 58, 58);
+    padding: 20px;
+    
+}
+
+.prods a{
+    text-decoration: none;
+    color: black;
+}
+
+#product1{
+    
+    width: 700px;
+    height: 345px;
+    background-image: url("sofa1.png");
+    
+}
+
+#product1  div{
+    margin-left: 160px;
+    margin-top: 10px;
+    color: black ;
+}
+
+#product1:hover{
+    background-image: url("sofa1a.png");
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+    
+}
+#product1:hover > div {
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+#product2{
+    width: 690px;
+    height: 695px;
+    margin-left: 10px;
+    background-image: url("chair2.png");
+
+}
+#product2 div{
+    margin-left: 600px;
+    margin-top: 20px;
+}
+#product2:hover{
+    background-image: url("chair2a.jpg");
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+
+}
+#product2:hover > div{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#product3{
+    width: 345px;
+    height: 340px;
+    margin-top: -345px;
+    background-image: url("chair1.png");
+    
+    
+}
+
+#product3:hover{
+    background-image: url("chair1a.png");
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+    background-repeat: no-repeat;
+    
+}
+#product3 div{
+    margin-left: 260px;
+    margin-top: 15px;
+}
+
+#product3:hover > div {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#product4{
+    width: 345px;
+    height: 340px;
+    margin-top: -345px;
+    margin-left: 10px;
+    background-image: url("komod1.png");
+    
+}
+#product4 div{
+    margin-top: 80px;
+    margin-left: 13px;
+}
+
+#product4:hover{
+    background-image: url("komod1a.png");
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+    
+}
+
+#product4:hover > div{
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 
