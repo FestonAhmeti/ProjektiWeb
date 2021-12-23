@@ -64,12 +64,15 @@
 
 /* MAIN */  
 #main{
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(24, 24, 24);
     width: 1920px;
 }
+
 /* slider */
+
+
 #slider{
-    width: 1920px;
+    width: 100%;
     max-height: 650px;
     display: flex;
 }
@@ -102,7 +105,7 @@
     margin-right: auto;
 
     flex-wrap: wrap;
-    background-color: rgb(59, 58, 58);
+    background-color: rgb(24, 24, 24);
     padding: 20px;
     
 }
@@ -116,7 +119,7 @@
     
     width: 700px;
     height: 345px;
-    background-image: url("sofa1.png");
+    background-image: url(images/sofa1.png);
     
 }
 
@@ -127,7 +130,7 @@
 }
 
 #product1:hover{
-    background-image: url("sofa1a.png");
+    background-image: url(images/sofa1a.png);
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -146,7 +149,7 @@
     width: 690px;
     height: 695px;
     margin-left: 10px;
-    background-image: url("chair2.png");
+    background-image: url(images/chair2.png);
 
 }
 #product2 div{
@@ -154,7 +157,7 @@
     margin-top: 20px;
 }
 #product2:hover{
-    background-image: url("chair2a.jpg");
+    background-image: url(images/chair2a.jpg);
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -171,13 +174,13 @@
     width: 345px;
     height: 340px;
     margin-top: -345px;
-    background-image: url("chair1.png");
+    background-image: url(images/chair1.png);
     
     
 }
 
 #product3:hover{
-    background-image: url("chair1a.png");
+    background-image: url(images/chair1a.png);
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -201,7 +204,7 @@
     height: 340px;
     margin-top: -345px;
     margin-left: 10px;
-    background-image: url("komod1.png");
+    background-image: url(images/komod1.png);
     
 }
 #product4 div{
@@ -210,7 +213,7 @@
 }
 
 #product4:hover{
-    background-image: url("komod1a.png");
+    background-image: url(images/komod1a.png);
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -265,6 +268,7 @@
 }
 .products-box:hover .products-img{
   transform: translateY(-100px);
+  transition: 1.3s ease-in-out;
 }
 .products-img img{
     width: 300px;

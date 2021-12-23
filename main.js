@@ -1,12 +1,13 @@
 //Kodi per sliderin e search bar
 
+
 var fotoArray = [
-    "furntiure1.jpg",
-    "furntiure2.jpg",
-    "furntiure3.jpg",
-    "furntiure4.jpg",
-    "furntiure6.jpg",
-    "furntiure7.jfif",
+    "images/furntiure1.jpg",
+    "images/furntiure2.jpg",
+    "images/furntiure3.jpg",
+    "images/furntiure4.jpg",
+    "images/furntiure6.jpg",
+    "images/furntiure7.jfif",
 
 ];
 var i = 0;

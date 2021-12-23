@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Products | Homegoods</title>
+    <link rel="stylesheet" href="newProducts.css">
+   
+    
+</head>
+<body>
+    <div id="navbar">
+        <ul id="l-nav">
+            <li><a href="index.html"><img src="../ProjektiWeb/images/logo_transparent.png" alt="Logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="newProducts.html">New Products</a></li>
+            <li><a href="#">SALE!</a></li>
+        </ul>
+        <ul id="r-nav">
+            <li><a href="#">Login</a></li>
+            <li><a href="#"><img src="../ProjektiWeb/images/cart-icon.jpg" alt="Cart"></a></li>
+        </ul>
+    </div>
+    <div id="newProducts-slider">
+
+            <div class="hero-left">
+              <h1>HOMEGOODS</h1>
+              <div class="layers">
+                <div class="layer layer-displayed" data-scene="1">
+                  <span>THE VIMLE</span>
+                  <div class="layer__image" ></div>
+                  <div class="layer__info">
+                    <div>
+                      <strong>Name</strong>
+                      <strong>Product</strong>
+                      <strong>Price</strong>
+                      <strong>Color</strong>
+                      <strong>Material</strong>
+                    </div>
+                    <div>
+                      <span>VIMLE</span>
+                      <span>Sofa</span>
+                      <span>150$</span>
+                      <span>Black</span>
+                      <span>Leather</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="layer" data-scene="2">
+                  <span>THE KIVIK</span>
+                  <div class="layer__image" style="background-image: url(images/sofa2.webp)"></div>
+                  <div class="layer__info">
+                    <div>
+                        <strong>Name</strong>
+                        <strong>Product</strong>
+                        <strong>Price</strong>
+                        <strong>Color</strong>
+                        <strong>Material</strong>
+                    </div>
+                    <div>
+                        <span>KIVIK</span>
+                        <span>Sofa</span>
+                        <span>170$</span>
+                        <span>Beige</span>
+                        <span>Hillared</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="layer" data-scene="3">
+                  <span>THE LANDSKRONA</span>
+                  <div class="layer__image" style="background-image: url(images/sofa3.webp)"></div>
+                  <div class="layer__info">
+                    <div>
+                        <strong>Name</strong>
+                        <strong>Product</strong>
+                        <strong>Price</strong>
+                        <strong>Color</strong>
+                        <strong>Material</strong>
+                    </div>
+                    <div>
+                        <span>LANDSKRONA</span>
+                        <span>Sofa</span>
+                        <span>130$</span>
+                        <span>Light Green</span>
+                        <span>Gunnared</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button onclick="switchLayer(2)"><</button>
+              <button onclick="switchLayer()">></button>
+            </div>
+            <div class="hero-right">
+              <div class="layer layer-displayed" data-scene="1"></div>
+              <div class="layer" data-scene="2"></div>
+              <div class="layer" data-scene="3"></div>
+              <div class="photo-frame">
+                <div class="layer layer-displayed" style="background-image: url(images/sofa1b.webp)" data-scene="1"></div>
+                <div class="layer" style="background-image: url(images/sofa2a.webp)" data-scene="2"></div>
+                <div class="layer" style="background-image: url(images/sofa3a.webp)" data-scene="3"></div>
+                <div class="cover"></div>
+              </div>
+              <div class="photo-name">
+                <div class="photo-name__wrapper">
+                  <div class="layer layer-displayed" data-scene="1">
+                    <span class="photo-name__title">VIMLE SOFA</span>
+                    <span>BLACK LEATHER</span>
+                  </div>
+                  <div class="layer" data-scene="2">
+                    <span class="photo-name__title">KIVIK SOFA</span>
+                    <span>HILLARED BEIGE</span>
+                  </div>
+                  <div class="layer" data-scene="3 ">
+                    <span class="photo-name__title">LANDSKRONA SOFA</span>
+                    <span>GUNNARED LIGHT GREEN</span>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-frame">
+                <div class="layer layer-displayed" style="background-image: url(images/sofa1a.webp)" data-scene="1"></div>
+                <div class="layer" style="background-image: url(images/sofa2b.webp)" data-scene="2"></div>
+                <div class="layer" style="background-image: url(images/sofa3b.webp)" data-scene="3"></div>
+                <div class="cover"></div>
+              </div>
+            </div>
+
+
+    <script src="newProducts.js"></script>
+</body>
+</html>
