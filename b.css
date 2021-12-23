@@ -1,0 +1,22 @@
+.container_t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+  }
+  
+  .container_t h1, h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+  }
+  
+  .container_t h1 {
+    font-size: 3.5rem;
+    color:white;
+  }
+  
+  .container_t h2 {
+    font-size: 2rem;
+    color: white;
+  }
