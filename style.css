@@ -69,31 +69,103 @@
 }
 
 /* slider */
-
-
-#slider{
-    width: 100%;
-    max-height: 650px;
-    display: flex;
+#banner-section{
+    position: relative;
+    height: 80vh;
+    z-index: 1;
+    overflow: hidden;
+    background-color: black;
 }
-#slider input{
-    width: 250px;
-    height: 50px;
+
+/* #banner-section input{
+    width: 700px;
+    height: 60px;
     padding-left: 20px;
     border: 0px;
-    border-radius: 10px;
+    border-radius: 5px;
     position: absolute;
-    margin-left: 835px;
+    margin-left: 610px;
     margin-top: 300px;
+    text-align: center;
+    
+} */
+#banner-section input i{
+    position: absolute;
+}
+.input-box{
+    margin-left: 610px;
+    margin-top: 300px;
+    display: flex;
+    width: 700px;
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    padding: 10px;
     
 }
-
-#slider img{
-    width: 1990px;
-    height: 650px;
-
+.input-box > i{
+    margin-left: 10px;
+    font-size: 30px;
+    color: #777;
+}
+.input-box > input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+}
+.slideshow-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: -1;
+    opacity: 0; 
+    animation: cycleImages 31s infinite; 
 }
 
+.slideshow-item img{
+    width: 1920px;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 31s infinite; 
+    filter: blur(0.2rem);
+}
+
+.slideshow-item:nth-child(1), .slideshow-item:nth-child(1) img {
+    animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2), .slideshow-item:nth-child(2) img{
+    animation-delay: 9s;
+}
+.slideshow-item:nth-child(3), .slideshow-item:nth-child(2) img{
+    animation-delay: 15s;
+}
+.slideshow-item:nth-child(4), .slideshow-item:nth-child(2) img{
+    animation-delay: 21s;
+}
+.slideshow-item:nth-child(5), .slideshow-item:nth-child(2) img{
+    animation-delay: 27s;
+}
+
+
+@keyframes cycleImages {
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes zoom {
+    100%{
+        transform: scale(1.3);
+    }
+}
 
 /*  products */
 #products{
