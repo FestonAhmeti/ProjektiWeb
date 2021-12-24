@@ -1,22 +1,144 @@
-.container_t {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 0 3rem;
-  }
+/*------------------------- Location Dropdown ------------------------ */
+li a {text-decoration : none; color : #2d2f31;}
+.locations-wrapper {
+    background-color: white;
+    font-family : "Open Sans",
+    sans-serif;
+}
+.locations-div{
+  width : 300px; 
+  background: #d9d9d9;
+  margin : 40px auto; 
   
-  .container_t h1, h2 {
-    font-weight: 200;
-    margin: 0.4rem;
-  }
+}
+.locations-div span {
+  padding : 30px;
+  background : #2d2f31; 
+  color : white;
+  font-size : 1.2em;
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.locations span::after {
+  float: right;
+  right: 10%;
+
+}
+
+.locations-content {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  /* transition: height 0.4s ease; */
+}
+
+.locations-content li {padding : 30px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .locations-content {height: 300px;} 
+
+/* ------------------------ Quote of the day Start ------------------ */
+.quote-container{
+  width: 100%;
+  height: 350px;
+  border-top: 1.5px solid #2d2f31;
+  background-color: rgb(83, 83, 83) ;
+}
+
+.quote-heading{
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 30;
+  color:#ffffff;
+  margin-top: 50px;
+}
+
+.quote-body {
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+  padding: 20px 10px ;
+}
+
+.quote{
+  text-align: center;
+  color: #ffffff;
+  height: 42px;
+  overflow: auto;
+}
+
+.icon{
+  margin-right: 5px;
+}
+
+.quote{
+  filter: blur(2px);
+}
+
+.author{
+  text-align: center;
+  margin-top: 15px;
+  filter: blur(2px);
+  color: #ffffff;
+}
+
+.quote-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  border-top: 1px solid #93a0ac;
+  padding: 15px 0;
+}
+
+.tweet-quote{
+  position: absolute;
+  top: 10px;
+}
+
+.tweet-quote a{
+  padding-left: 50px;
+  font-size: 40px;
+  color: #2a8dff;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.tweet-quote a:hover{
+  color: #00acee;
+}
+
+#already-picked {
+  position: relative;
+  font-size: 9px;
+  color:#ffffff;
+}
+
+.tweet-quote span{
+  font-size: 16px;
+}
+
+.quote-btn button{
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background-color: #11a9eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
   
-  .container_t h1 {
-    font-size: 3.5rem;
-    color:white;
-  }
-  
-  .container_t h2 {
-    font-size: 2rem;
-    color: white;
-  }
+}
+
+.quote-btn button:active{
+  background-color: #00acee;
+}

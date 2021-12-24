@@ -1,10 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+/*-------------------------- Back to top button -----------------------*/
+#to-top-btn{
+    display: inline-block;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+    outline: none;
+    border: 3px solid rgb(32,32,32);
+    border-radius: 1px;
+    transition: background-color 0.5s, color 0.5s, opacity 0.5s, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 30;
+}
+
+#to-top-btn:hover,  #to-top-btn:focus{
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+
+#to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+/*--------------------------End of to top Button------------------------------*/  
 #navbar {
     width: 1920px;
     height: 100px;
@@ -449,7 +481,7 @@
     flex-direction: column;
     background-color: #ffffff;
     color: black;
-    min-height: 220px;
+    min-height: 280px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -468,6 +500,7 @@
 }
 
 .stat-box{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -493,16 +526,16 @@
 /* End of Stats */
 /* ------------------------ About Us Section Start ------------------ */
 .about-container{
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    width: 1440px;
-    background-color: rgb(59, 58, 58);
+    height: 500px;
+    background: white;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.4);
+    background-color: inherit;
+    font-family:'Poppins', sans-serif;
+
 }
 
 .about-card{
@@ -515,10 +548,10 @@
 .about-imgBox{
     position: relative;
     left: 25px;
-    width: 700px;
-    height: 550px;
+    width: 500px;
+    height: 450px;
     z-index: 1;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.85);
+    box-shadow: 0px 3px 20px rgba(255, 255, 255, 0.4);
 }
 
 .about-imgBox img{
@@ -534,8 +567,8 @@
     position: relative;
     right: 25px;
     width: 500px;
-    height: 400px;
-    background: #929292;
+    height: 350px;
+    background: #6e6e6e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -554,12 +587,70 @@
 }
 
 .about-contentBox a{
+    height: 20px;
+    width: 90px;
     display: inline-block;
     margin-top: 15px;
-    color: white;
+    color: black;
+    text-align: center;
     text-decoration: none;
     border-radius: 50px;
     padding: 4px 10px;
     border: 2px solid rgba(255,255,255,1);
+    background: white;
 }
+
 /* ------------------------ About Us Section Ending ------------------ */
+
+/* ------------------------ Footer Start ------------------ */
+footer{
+    background: rgb(24, 24, 24);
+    height: 300px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    padding-top: 30px;
+    color: white;
+    margin-top: auto;
+}
+.footer-logo-container img{
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+.socials a{
+    color: white;
+}
+.socials a:hover{
+    color: gray;
+}
+/* ------------------------ Footer ending ------------------ */
