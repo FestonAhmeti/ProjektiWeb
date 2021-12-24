@@ -7,7 +7,7 @@
     <title>Home | Homegoods</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="b.css">
-    <script src="https://kit.fontawesome.com/c39baaf563.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -432,6 +432,41 @@
 
         
     </div>
+    <div id="stats">
+        <div class="stat-container" onscroll="btnClick()">
+            <button id="count-btn" onclick="startCount();" style="display: none;">Count</button>
+            <div class="stat-heading">
+                <h1>Our history in numbers</h1>
+            </div>
+            <div class="stat-content">
+                <div class="stat-box">
+                    <i class="fas fa-map-marker-alt" style="font-size: 50px ;"></i>
+                    <div class="statistics" data-stop-count="15">
+                        <span>0</span>
+                    </div>
+                    <span>Locations</span>
+                </div>
+
+                <div class="stat-box">
+                    <i class="fas fa-couch" style="font-size: 50px ;"></i>
+                    <div class="statistics" data-stop-count="5600">
+                        <span>0</span>
+                    </div>
+                    <span>Furnitures</span>
+                </div>
+
+
+                <div class="stat-box">
+                    <i class="fas fa-user-tie" style="font-size: 50px ;"></i>
+                    <div class="statistics" data-stop-count="835">
+                        <span>0</span>
+                    </div>
+                    <span>Employees</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
+    <script src="stats.js"></script>
 </body>
 </html>
