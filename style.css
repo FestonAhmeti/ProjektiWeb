@@ -71,6 +71,9 @@
     border-bottom: 2px solid rgb(93, 100, 201);
     
 }
+#l-nav #selected-page {
+    border-bottom: 2px solid rgb(93, 100, 201);
+  }
 
 #l-nav li a img{
     margin-top: 5px;
