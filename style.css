@@ -243,6 +243,7 @@
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: flex-end;
+    transition: 0.3s ease-in;
     
 }
 #product1:hover > div {
@@ -270,6 +271,7 @@
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: flex-end;
+    transition: 0.3s ease-in;
 
 }
 #product2:hover > div{
@@ -294,6 +296,7 @@
 	justify-content: flex-start;
 	align-items: flex-end;
     background-repeat: no-repeat;
+    transition: 0.3s ease-in;
     
 }
 #product3 div{
@@ -326,6 +329,7 @@
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: flex-end;
+    transition: 0.3s ease-in;
     
 }
 
