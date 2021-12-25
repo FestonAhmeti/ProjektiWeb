@@ -1,63 +1,16 @@
-/*------------------------- Location Dropdown ------------------------ */
-li a {text-decoration : none; color : #2d2f31;}
-.locations-wrapper {
-    background-color: white;
-    font-family : "Open Sans",
-    sans-serif;
-}
-.locations-div{
-  width : 300px; 
-  background: #d9d9d9;
-  margin : 40px auto; 
-  
-}
-.locations-div span {
-  padding : 30px;
-  background : #2d2f31; 
-  color : white;
-  font-size : 1.2em;
-  font-variant : small-caps;
-  cursor : pointer;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 
-.locations span::after {
-  float: right;
-  right: 10%;
-
-}
-
-.locations-content {
-  clear:both;
-  width:100%;
-  height:0px;
-  overflow: hidden;
-  text-align: center;
-  /* transition: height 0.4s ease; */
-}
-
-.locations-content li {padding : 30px;}
-
-#touch {position: absolute; opacity: 0; height: 0px;}    
-
-#touch:checked + .locations-content {height: 300px;} 
 
 /* ------------------------ Quote of the day Start ------------------ */
 .quote-container{
   width: 100%;
   height: 350px;
-  border-top: 1.5px solid #2d2f31;
-  background-color: rgb(83, 83, 83) ;
 }
 
 .quote-heading{
   text-align: center;
   margin-bottom: 15px;
   font-size: 30;
-  color:#ffffff;
+  color:#000000;
   margin-top: 50px;
 }
 
@@ -70,7 +23,7 @@ li a {text-decoration : none; color : #2d2f31;}
 
 .quote{
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   height: 42px;
   overflow: auto;
 }
@@ -87,7 +40,7 @@ li a {text-decoration : none; color : #2d2f31;}
   text-align: center;
   margin-top: 15px;
   filter: blur(2px);
-  color: #ffffff;
+  color: #000000;
 }
 
 .quote-buttons {
@@ -120,7 +73,7 @@ li a {text-decoration : none; color : #2d2f31;}
 #already-picked {
   position: relative;
   font-size: 9px;
-  color:#ffffff;
+  color:#000000;
 }
 
 .tweet-quote span{
@@ -132,7 +85,7 @@ li a {text-decoration : none; color : #2d2f31;}
   outline: none;
   padding: 10px 15px;
   background-color: #11a9eb;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
