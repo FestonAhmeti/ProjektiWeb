@@ -343,15 +343,15 @@ html, body, #newProducts-slider {
     flex-direction: row;
     margin-top: 50px;
     background-color: white;
-    height: 600px;
-    width: 80%;
+    height: 700px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
 }
 .collection-div #left-side{
     background-color: red;
-    width: 60%;
+    width: 65%;
     height: 100%;
     max-height: 100%;
     
@@ -367,7 +367,7 @@ html, body, #newProducts-slider {
 .collection-div #right-side{
     display: flex;
     background-color: #c0c1c9;
-    width: 40%;
+    width: 35%;
     height: 100%;
     max-height: 100%;
     align-items: center;
