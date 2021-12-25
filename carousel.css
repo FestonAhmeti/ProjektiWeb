@@ -1,0 +1,482 @@
+/*--------------NewProductsSection------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800, 800i, 900&display=swap');
+#second-carousel{
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        width: 1920px;
+        background: #0c0c0c; 
+    
+}
+#wrapper2{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 1720px;
+    height: 535px;
+    background: #0c0c0c; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-second {
+    position: relative;
+    display: flex;
+
+}
+#title{
+  margin-top: -20px;
+  margin-left: 10px;
+  position: absolute;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-second .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    
+}
+.container-second .card:nth-child(1){
+    background: rgba(35,31,25,255);
+}
+.container-second .card:nth-child(2){
+    background: rgba(53,53,53,255);
+}
+.container-second .card:nth-child(3){
+    background: rgba(123,109,92,255);
+}
+.container-second .card:nth-child(4){
+    background: #3b0300;
+}
+.container-second .card:nth-child(5){
+    background: rgba(38,24,24,255);
+}
+.container-second .card:nth-child(6){
+    background: rgba(47,42,43,255);
+}
+.container-second .card:nth-child(7){
+    background: rgba(51,51,54,255);
+}
+.container-second .card:nth-child(8){
+    background: #532a1d;
+}
+
+/*span background*/
+.container-second .card:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container-second .card:nth-child(1):hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container-second .card:nth-child(1):after {
+    content: "Sofa";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+/*----2-----*/
+.container-second .card:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+ .container-second .card:nth-child(2):hover:before {
+    clip-path: circle(300px at 80% -20%);
+} 
+
+.container-second .card:nth-child(2):after {
+    content: "Table";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+/*------3-----*/
+.container-second .card:nth-child(3):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+ .container-second .card:nth-child(3):hover:before {
+    clip-path: circle(300px at 80% -20%);
+} 
+
+.container-second .card:nth-child(3):after {
+    content: "Couch";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+/*-----4-----*/
+.container-second .card:nth-child(4):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+ .container-second .card:nth-child(4):hover:before {
+    clip-path: circle(300px at 80% -20%);
+} 
+
+.container-second .card:nth-child(4):after {
+    content: "Rug";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+/*------5------*/
+.container-second .card:nth-child(5):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+ .container-second .card:nth-child(5):hover:before {
+    clip-path: circle(300px at 80% -20%);
+} 
+
+.container-second .card:nth-child(5):after {
+    content: "Table";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+/*--------6---------*/
+.container-second .card:nth-child(6):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+ .container-second .card:nth-child(6):hover:before {
+    clip-path: circle(300px at 80% -20%);
+} 
+
+.container-second .card:nth-child(6):after {
+    content: "Couch";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+/*-------7-----*/
+.container-second .card:nth-child(7):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+ .container-second .card:nth-child(7):hover:before {
+    clip-path: circle(300px at 80% -20%);
+} 
+
+.container-second .card:nth-child(7):after {
+    content: "Bed";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+/*------8-------*/
+.container-second .card:nth-child(8):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+ .container-second .card:nth-child(8):hover:before {
+    clip-path: circle(300px at 80% -20%);
+} 
+
+.container-second .card:nth-child(8):after {
+    content: "Stool";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+/*end*/
+
+
+.container-second .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.container-second .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(-25%);
+    /* bug  */
+}
+
+.container-second .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 270px;
+}
+
+.container-second .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+}
+
+.container-second .card:hover .contentBx {
+    height: 210px;
+}
+
+.container-second .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container-second .card .contentBx .price,
+.container-second .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-second .card:hover .contentBx .price {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.container-second .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.container-second .card .contentBx .price h3,
+.container-second .card .contentBx .color h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container-second .card .contentBx .price span {
+    width: 35px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: .5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-second .card .contentBx .price span:hover {  /* other bug */
+    background: #B90000;
+}
+
+.container-second .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container-second .card .contentBx .color span:nth-child(2) {
+     background: #1BBFE9;
+}
+
+.container-second .card .contentBx .color span:nth-child(3) {
+     background: #1B2FE9;
+}
+
+.container-second .card .contentBx .color span:nth-child(4) {
+     background: #080481;
+}
+
+.container-second .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s;
+}
+
+.container-second .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .7s;
+} 
+
+
+#carousel2 {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  
+  #carousel2::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #prev2,
+  #next2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev2 {
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    display: none;
+  }
+  
+  #next2 {
+    /* top: 50%; */
+    margin-top: 80px;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .container-second {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
