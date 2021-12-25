@@ -11,6 +11,8 @@ function changeCoverAnimState(state = 0) {
   });
 }
 
+
+
 function switchLayer(step = 1) {
   const nextSlide =
     (sliderIndex + step) % 3 === 0 ? 3 : (sliderIndex + step) % 3;
@@ -33,3 +35,18 @@ function switchLayer(step = 1) {
   }
   sliderIndex = nextSlide;
 }
+
+// Button hide show
+
+const targetDiv = document.getElementById("products-grid-2");
+const btn = document.getElementById("show-hide-button");
+btn.onclick = function () {
+  if (targetDiv.style.display == "block") {
+    targetDiv.style.display = "none";
+    btn.style.display= "block";
+  } else {
+    targetDiv.style.display = "block";
+    targetDiv.style.transition = "0.5s ease-in"
+    btn.style.display= "none";
+  }
+};

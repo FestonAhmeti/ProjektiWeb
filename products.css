@@ -737,7 +737,7 @@ html, body, #newProducts-slider {
 
 .products-grid{
     width: 100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     padding-top: 30px;
 }
 
@@ -752,7 +752,7 @@ html, body, #newProducts-slider {
   display: grid;
   /* grid-template-columns: 33.3% 33.3% 33.3%; */
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(42, 1fr);
+  grid-template-rows: repeat(40, 1fr);
   grid-auto-rows: minmax(550px, auto);
   grid-gap: 10px;
   
@@ -1349,11 +1349,364 @@ html, body, #newProducts-slider {
   color: white;
   transition: 0.3s ease-in-out;
 }
-.sixteen{opacity: 0;}
+#content .sixteen{opacity: 0;}
 
 
 
 /*-----------------End of Products Grid Div------------------*/
+
+#show-hide-button{
+  margin-left: 47%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 130px;
+  height: 35px;
+  border: 0px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+/* ----------Second Product Grid ------------- */
+
+#products-grid-2{
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: -56px;
+  display: none;
+  /* padding-top: 30px; */
+}
+
+/* #product-grid-title h2{
+font-size: 22pt;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 40px;
+} */
+
+#content2{
+display: grid;
+/* grid-template-columns: 33.3% 33.3% 33.3%; */
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(40, 1fr);
+grid-auto-rows: minmax(550px, auto);
+grid-gap: 10px;
+
+max-width: 80%;
+margin: 0 auto;
+}
+#content2 div{
+background: #3bbced;
+padding: 30px;
+}
+#content2 div:nth-child(even){
+background: #777;
+}
+#content2 .one{
+position: relative;
+grid-column: 1 / 1;
+grid-row: 2/9;
+background-image: url(images/grid10a.png) !important;
+
+}
+
+#content2 .one button,
+#content2 .two button,
+#content2 .three button,
+#content2 .four button,
+#content2 .five button,
+#content2 .six button,
+#content2 .seven button,
+#content2 .eight button,
+#content2 .nine button,
+#content2 .ten button,
+#content2 .eleven button,
+#content2 .twelve button,
+#content2 .thirteen button,
+#content2 .fourteen button,
+#content2 .fifteen button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content2 .one button a,
+#content2 .two button a,
+#content2 .three button a,
+#content2 .four button a,
+#content2 .five button a,
+#content2 .six button a,
+#content2 .seven button a,
+#content2 .eight button a,
+#content2 .nine button a,
+#content2 .ten button a,
+#content2 .eleven button a,
+#content2 .twelve button a,
+#content2 .thirteen button a,
+#content2 .fourteen button a,
+#content2 .fifteen button a
+{
+  text-decoration: none;
+  color: black;
+}
+#content2 .one button a:hover,
+#content2 .two button a:hover,
+#content2 .three button a:hover,
+#content2 .four button a:hover,
+#content2 .five button a:hover,
+#content2 .six button a:hover,
+#content2 .seven button a:hover,
+#content2 .eight button a:hover,
+#content2 .nine button a:hover,
+#content2 .ten button a:hover,
+#content2 .eleven button a:hover,
+#content2 .twelve button a:hover,
+#content2 .thirteen button a:hover,
+#content2 .fourteen button a:hover,
+#content2 .fifteen button a:hover
+{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content2 .one button:hover,
+#content2 .two button:hover,
+#content2 .three button:hover,
+#content2 .four button:hover,
+#content2 .five button:hover,
+#content2 .six button:hover,
+#content2 .eight button:hover,
+#content2 .nine button:hover,
+#content2 .ten button:hover,
+#content2 .eleven button:hover,
+#content2 .twelve button:hover,
+#content2 .thirteen button:hover,
+#content2 .fourteen button:hover,
+#content2 .fifteen button:hover
+{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+#content2 .two{
+position: relative;
+grid-column: 2 / 2;
+grid-row: 1/8;
+background-image: url(images/grid2a.png) !important;
+}
+#content2 .three{
+position: relative;
+grid-column: 3 / 3; 
+grid-row: 2/9;
+background-image: url(images/grid3a.png) !important;
+}
+#content2 .four{
+position: relative;
+grid-column: 1/1;
+grid-row: 9/17;
+background-image: url(images/grid4a.png) !important;
+}
+#content2 .five{
+position: relative;
+grid-column: 2/2;
+grid-row: 8/16;
+background-image: url(images/grid5a.png) !important;
+}
+#content2 .six{
+position: relative;
+grid-column: 3/3;
+grid-row: 9/17;
+background-image: url(images/grid6a.png) !important;
+
+}
+#content2 .seven{
+position: relative;
+grid-column: 1 / 1;
+grid-row: 17/25;
+background-image: url(images/grid7a.png) !important;
+
+}
+#content2 .eight{
+position: relative;
+grid-column: 2/2;
+grid-row: 16/24;
+background-image: url(images/grid8a.png) !important;
+
+}
+#content2 .nine{
+position: relative;
+grid-column: 3/3;
+grid-row: 17/25;
+background-image: url(images/grid9a.png) !important;
+
+}
+#content2 .ten{
+position: relative;
+grid-column: 1 / 1;
+grid-row: 25/33;
+background-image: url(images/grid10a.png) !important;
+
+}
+#content2 .eleven{
+position: relative;
+grid-column: 2/2;
+grid-row: 24/32;
+background-image: url(images/grid11a.png) !important;
+
+}
+#content2 .twelve{
+position: relative;
+grid-column: 3/3;
+grid-row: 25/33;
+background-image: url(images/grid12a.png) !important;
+
+}
+#content2 .thirteen{
+position: relative;
+grid-column: 1 / 1;
+grid-row: 33/41;
+background-image: url(images/grid13a.png) !important;
+
+}
+#content2 .fourteen{
+position: relative;
+grid-column: 2/2;
+grid-row: 32/40;
+background-image: url(images/grid14a.png) !important;
+
+}
+#content2 .fifteen{
+position: relative;
+grid-column: 3/3;
+grid-row: 33/41;
+background-image: url(images/grid15a.png) !important;
+
+}
+#content2 .sixteen{opacity: 0;}
+
+/* ------------- End Second Grid Photo -----------  */
+
+
+/* -------------- Div with rooms preview ----------- */
+.rooms-div{
+  width: 100%;
+  height: 450px;
+  background-color: black;
+  padding-top: 20px;
+}
+.rooms-div h2{
+  font-size: 17pt;
+  margin-left: 5%;
+}
+
+.rooms-div #rooms-div-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.rooms-div #rooms-div-container div{
+  width: 260px;
+  height: 350px;
+  background-color: #E41936;
+}
+
+/* Div one */
+
+.rooms-div #rooms-div-container #one{
+  position: relative;
+  background-image: url(images/rooms-living-room.png);
+}
+.rooms-div #one button,
+.rooms-div #two button,
+.rooms-div #three button,
+.rooms-div #four button,
+.rooms-div #five button,
+.rooms-div #six button{
+  position: absolute;
+  left: 38%;
+  bottom: 4%;
+  width: 88px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: white;
+}
+.rooms-div #one button a,
+.rooms-div #two button a,
+.rooms-div #three button a,
+.rooms-div #four button a,
+.rooms-div #five button a,
+.rooms-div #six button a{
+  text-decoration: none;
+  color: black;
+}
+.rooms-div #one button a:hover,
+.rooms-div #two button a:hover,
+.rooms-div #three button a:hover,
+.rooms-div #four button a:hover,
+.rooms-div #five button a:hover,
+.rooms-div #six button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+.rooms-div #one button:hover,
+.rooms-div #two button:hover,
+.rooms-div #three button:hover,
+.rooms-div #four button:hover,
+.rooms-div #five button:hover,
+.rooms-div #six button:hover{
+  position: absolute;
+  left: 38%;
+  bottom: 4%;
+  width: 90px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+/* Div Two */
+.rooms-div #rooms-div-container #two{
+  position: relative;
+  background-image: url(images/rooms-bedroom.png);
+}
+.rooms-div #rooms-div-container #three{
+  position: relative;
+  background-image: url(images/rooms-kitchen.png);
+}
+.rooms-div #rooms-div-container #four{
+  position: relative;
+  background-image: url(images/rooms-bathroom.jpg);
+}
+.rooms-div #rooms-div-container #five{
+  position: relative;
+  background-image: url(images/rooms-dining\ room.png);
+}
+.rooms-div #rooms-div-container #six{
+  position: relative;
+  background-image: url(images/rooms-lightning.png);
+}
 
 /* ------------------------ Footer Start ------------------ */
 footer{
