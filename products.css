@@ -350,19 +350,344 @@ html, body, #newProducts-slider {
     margin-bottom: 50px;
 }
 .collection-div #left-side{
+    position: relative;
     background-color: red;
     width: 65%;
     height: 100%;
     max-height: 100%;
+    background-image: url(images/gaming-photo.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     
 }
 
-.collection-div #left-side img{
-    width: 100%;
-    height: 100%;
+  .collection-div #left-side .buttons{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+  }
 
-}
+  .collection-div #left-side #button1 {
+      position: absolute;
+      left: 63%;
+      top: 85%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
 
+  /* -----------Button 1 Hover --------*/
+
+  .collection-div #left-side #button1-div {
+      position: absolute;
+      width: 120px;
+      height: 110px;
+      background-color: white;
+      left: 67%;
+      top: 80%;
+      display: none;
+      font-family: sans-serif;
+  }
+  
+      
+  .collection-div #left-side #button1:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 63%;
+      top: 85%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+      
+  }
+
+  .collection-div #left-side #anchor:hover + #button1-div {
+      display: block;
+      font-size: 13pt;
+  }
+  .collection-div #left-side #anchor:hover + #button1-div h5 {
+      margin: 5px 10px;
+  }
+  .collection-div #left-side #anchor:hover + #button1-div h6 {
+      color: red;
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+  }
+  .collection-div #left-side #anchor:hover + #button1-div p {
+      font-family: sans-serif;
+      margin-left: 10px;
+      font-size: 0.83em;
+      margin-top: 5px;
+  }
+
+  .collection-div #left-side #anchor:hover + #button1-div h4 {
+      margin-top: 5px;
+      margin-left: 10px;
+  }
+
+  /* ----------End of Button1 Hover-------- */
+
+  
+
+
+
+
+  .collection-div #left-side #button2 {
+      position:absolute;
+      left: 41%;
+      top: 31%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  .collection-div #left-side #button2:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 41%;
+      top: 31%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+  }
+
+  /* -----------Button 2 Hover --------*/
+
+  .collection-div #left-side #button2-div {
+      position: absolute;
+      width: 125px;
+      height: 110px;
+      background-color: white;
+      left: 25%;
+      top: 25%;
+      display: none;
+      font-family: sans-serif;
+  }
+  
+
+  .collection-div #left-side #anchor2:hover + #button2-div {
+      display: block;
+      font-size: 13pt;
+      
+  }
+  .collection-div #left-side #anchor2:hover + #button2-div h5 {
+      margin: 5px 10px;
+  }
+  .collection-div #left-side #anchor2:hover + #button2-div h6 {
+      color: red;
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+  }
+  .collection-div #left-side #anchor2:hover + #button2-div p {
+      font-family: sans-serif;
+      margin-left: 10px;
+      font-size: 0.83em;
+      margin-top: 5px;
+  }
+
+  .collection-div #left-side #anchor2:hover + #button2-div h4 {
+      margin-top: 5px;
+      margin-left: 10px;
+  }
+
+  /* ----------End of Button2 Hover-------- */
+
+
+
+  .collection-div #left-side #button3 {
+      position:absolute;
+      left: 27%;
+      top: 90%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  .collection-div #left-side #button3:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 27%;
+      top: 90%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+  }
+
+
+/* -----------Button 3 Hover --------*/
+
+      .collection-div #left-side #button3-div {
+        position: absolute;
+        width: 130px;
+        height: 110px;
+        background-color: white;
+        left: 31%;
+        top: 83%;
+        display: none;
+        font-family: sans-serif;
+      }
+
+
+      .collection-div #left-side #anchor3:hover + #button3-div {
+        display: block;
+        font-size: 13pt;
+        
+      }
+      .collection-div #left-side #anchor3:hover + #button3-div h5 {
+        margin: 5px 10px;
+      }
+      .collection-div #left-side #anchor3:hover + #button3-div h6 {
+        color: red;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+      .collection-div #left-side #anchor3:hover + #button3-div p {
+        font-family: sans-serif;
+        margin-left: 10px;
+        font-size: 0.83em;
+        margin-top: 5px;
+      }
+
+      .collection-div #left-side #anchor3:hover + #button3-div h4 {
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+
+/* ----------End of Button3 Hover-------- */
+
+
+
+  .collection-div #left-side #button4 {
+      position:absolute;
+      left: 35%;
+      top: 72.5%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  .collection-div #left-side #button4:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 35%;
+      top: 72.5%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+  }
+
+  /* -----------Button 4 Hover --------*/
+
+      .collection-div #left-side #button4-div {
+          position: absolute;
+          width: 130px;
+          height: 110px;
+          background-color: white;
+          left: 20%;
+          top: 65%;
+          display: none;
+          font-family: sans-serif;
+      }
+
+
+      .collection-div #left-side #anchor4:hover + #button4-div {
+          display: block;
+          font-size: 13pt;
+          
+      }
+      .collection-div #left-side #anchor4:hover + #button4-div h5 {
+          margin: 5px 10px;
+      }
+      .collection-div #left-side #anchor4:hover + #button4-div h6 {
+          color: red;
+          margin-top: 15px;
+          margin-left: 10px;
+          margin-bottom: 5px;
+      }
+      .collection-div #left-side #anchor4:hover + #button4-div p {
+          font-family: sans-serif;
+          margin-left: 10px;
+          font-size: 0.83em;
+          margin-top: 5px;
+      }
+
+      .collection-div #left-side #anchor4:hover + #button4-div h4 {
+          margin-top: 5px;
+          margin-left: 10px;
+      }
+
+/* ----------End of Button4 Hover-------- */
+
+  .collection-div #left-side #button5 {
+      position:absolute;
+      left: 52.75%;
+      top: 18%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  .collection-div #left-side #button5:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 52.75%;
+      top: 18%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+  }
+
+  /* -----------Button 5 Hover --------*/
+
+  .collection-div #left-side #button5-div {
+      position: absolute;
+      width: 120px;
+      height: 110px;
+      background-color: white;
+      left: 57%;
+      top: 12%;
+      display: none;
+      font-family: sans-serif;
+  }
+
+
+  .collection-div #left-side #anchor5:hover + #button5-div {
+      display: block;
+      font-size: 13pt;
+      
+  }
+  .collection-div #left-side #anchor5:hover + #button5-div h5 {
+      margin: 5px 10px;
+  }
+  .collection-div #left-side #anchor5:hover + #button5-div h6 {
+      color: red;
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+  }
+  .collection-div #left-side #anchor5:hover + #button5-div p {
+      font-family: sans-serif;
+      margin-left: 10px;
+      font-size: 0.83em;
+      margin-top: 5px;
+  }
+
+  .collection-div #left-side #anchor5:hover + #button5-div h4 {
+      margin-top: 5px;
+      margin-left: 10px;
+  }
+
+/* ----------End of Button5 Hover-------- */
+
+
+
+
+
+/* ------Right Side Of The Div------- */
 
 .collection-div #right-side{
     display: flex;
@@ -406,7 +731,6 @@ html, body, #newProducts-slider {
     
 }
 
-
 /*End of Div style*/
 
 /* ---------------Products Grid Div--------------*/
@@ -443,89 +767,587 @@ html, body, #newProducts-slider {
   background: #777;
 }
 #content .one{
+  position: relative;
   grid-column: 1 / 1;
   grid-row: 1/9;
   background-image: url(images/grid1.png) !important;
 }
+
+#content .one button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .one button a{
+  text-decoration: none;
+  color: black;
+}
+#content .one button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .one button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+
 #content .two{
+  position: relative;
   grid-column: 2 / 2;
   grid-row: 1/8;
   background-image: url(images/grid2.png) !important;
 }
+#content .two button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .two button a{
+  text-decoration: none;
+  color: black;
+}
+#content .two button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .two button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .three{
   grid-column: 3 / 3; 
+  position: relative;
   grid-row: 1/9;
   background-image: url(images/grid3.png) !important;
 }
+#content .three button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .three button a{
+  text-decoration: none;
+  color: black;
+}
+#content .three button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .three button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .four{
+  position: relative;
   grid-column: 1/1;
   grid-row: 9/17;
   background-image: url(images/grid4\ .jpg) !important;
 }
+#content .four button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .four button a{
+  text-decoration: none;
+  color: black;
+}
+#content .four button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .four button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .five{
+  position: relative;
   grid-column: 2/2;
   grid-row: 8/16;
   background-image: url(images/grid5.png) !important;
 }
+#content .five button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .five button a{
+  text-decoration: none;
+  color: black;
+}
+#content .five button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .five button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .six{
+  position: relative;
   grid-column: 3/3;
   grid-row: 9/17;
   background-image: url(images/grid6.png) !important;
 
 }
+#content .six button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .six button a{
+  text-decoration: none;
+  color: black;
+}
+#content .six button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .six button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .seven{
+  position: relative;
   grid-column: 1 / 1;
   grid-row: 17/25;
   background-image: url(images/grid7.png) !important;
 
 }
+#content .seven button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .seven button a{
+  text-decoration: none;
+  color: black;
+}
+#content .seven button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .seven button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .eight{
+  position: relative;
   grid-column: 2/2;
   grid-row: 16/24;
   background-image: url(images/grid8.png) !important;
 
 }
+#content .eight button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .eight button a{
+  text-decoration: none;
+  color: black;
+}
+#content .eight button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .eight button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .nine{
+  position: relative;
   grid-column: 3/3;
   grid-row: 17/25;
   background-image: url(images/grid9.png) !important;
 
 }
+#content .nine button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .nine button a{
+  text-decoration: none;
+  color: black;
+}
+#content .nine button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .nine button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .ten{
+  position: relative;
   grid-column: 1 / 1;
   grid-row: 25/33;
   background-image: url(images/grid10.png) !important;
 
 }
+#content .ten button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .ten button a{
+  text-decoration: none;
+  color: black;
+}
+#content .ten button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .ten button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .eleven{
+  position: relative;
   grid-column: 2/2;
   grid-row: 24/32;
   background-image: url(images/grid11.png) !important;
 
 }
+#content .eleven button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .eleven button a{
+  text-decoration: none;
+  color: black;
+}
+#content .eleven button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .eleven button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .twelve{
+  position: relative;
   grid-column: 3/3;
   grid-row: 25/33;
   background-image: url(images/grid12.png) !important;
 
 }
+#content .twelve button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .twelve button a{
+  text-decoration: none;
+  color: black;
+}
+#content .twelve button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .twelve button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .thirteen{
+  position: relative;
   grid-column: 1 / 1;
   grid-row: 33/41;
   background-image: url(images/grid13.png) !important;
 
 }
+#content .thirteen button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .thirteen button a{
+  text-decoration: none;
+  color: black;
+}
+#content .thirteen button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .thirteen button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .fourteen{
+  position: relative;
   grid-column: 2/2;
   grid-row: 32/40;
   background-image: url(images/grid14.png) !important;
 
 }
+#content .fourteen button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .fourteen button a{
+  text-decoration: none;
+  color: black;
+}
+#content .fourteen button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .fourteen button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
 #content .fifteen{
+  position: relative;
   grid-column: 3/3;
   grid-row: 33/41;
   background-image: url(images/grid15.png) !important;
 
+}
+#content .fifteen button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .fifteen button a{
+  text-decoration: none;
+  color: black;
+}
+#content .fifteen button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .fifteen button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
 }
 .sixteen{opacity: 0;}
 
