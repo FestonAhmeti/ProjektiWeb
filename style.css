@@ -137,10 +137,11 @@
     border-radius: 30px;
     align-items: center;
     padding: 10px;
+    opacity: 60%;
     
 }
 .input-box > i{
-    margin-left: 10px;
+    margin-left: 8px;
     font-size: 30px;
     color: #777;
 }
@@ -613,7 +614,7 @@
 footer{
     background: rgb(24, 24, 24);
     height: 300px;
-    width: 100%;
+    width: 1920px;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     padding-top: 30px;
@@ -661,3 +662,4 @@ footer{
     color: gray;
 }
 /* ------------------------ Footer ending ------------------ */
+

@@ -1,6 +1,6 @@
   /* ------------------------ Quote of the day Start ------------------ */
 .quote-container-second{
-  width: 100%;
+  width: 1920px;
   height: 350px;
   border-top: 1.5px solid #2d2f31;
   background-color: rgb(83, 83, 83) ;
@@ -15,7 +15,7 @@
 }
 
 .quote-body {
-  width: 100%;
+  width: 1920px;
   height: 200px;
   background-color: transparent;
   padding: 20px 10px ;

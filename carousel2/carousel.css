@@ -6,6 +6,7 @@
         font-family: 'Poppins', sans-serif;
         width: 1920px;
         background: #0c0c0c; 
+        overflow: hidden;
     
 }
 #wrapper2{
@@ -17,6 +18,7 @@
     background: #0c0c0c; 
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -446,7 +448,7 @@
   }
   
   #prev2,
-  #next2 {
+  #next2{
     display: flex;
     justify-content: center;
     align-content: center;
