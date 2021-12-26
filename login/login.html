@@ -22,7 +22,7 @@
             <div class="social-icons">
                 
                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a> 
-                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> </a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://myaccount.google.com/profile" target="_blank"><i class="fab fa-google-plus-g"></i> </a>
            
             </div>
@@ -33,17 +33,17 @@
                <span id="text"></span>
               
                 <input type="checkbox" class="check-box"><p>Remember Password</p>
-                <button type="submit" class="submit-btn" onClick="login()">Log In</button>
+                <button type="submit" class="submit-btn" onClick="loginValidation()">Log In</button>
             </form>
             <form id="register" class="input">
                 <input type="text" class="input-field" id="user" placeholder="User Id" onkeydown="Validation2()" required autocomplete="off">
                 <span id="text1"></span>
                 <input type="email" class="input-field" id="email_" placeholder="Email" required onkeydown="Validation3()" autocomplete="off">
                 <span id="text3"></span>
-                <input type="password" class="input-field" placeholder="Enter Password" required onkeydown="Validation4()" autocomplete="off">
+                <input type="password" class="input-field" id="psw" placeholder="Enter Password" required onkeydown="Validation4()" autocomplete="off">
                 <span id="text4"></span>
                 <input type="checkbox" class="check-box"><p>I agree to the terms and condition</p>
-                <button type="submit" class="submit-btn" onClick="register()">Register</button>
+                <button type="submit" class="submit-btn" onClick="registerValidation()">Register</button>
             </form>
 
         </div>
@@ -64,6 +64,29 @@
             x.style.left="50px";
             y.style.left="450px";
             z.style.left="0px";
+        }
+
+        function loginValidation(){
+            var usern=document.getElementById("user").value;
+            var pass=document.getElementById("psw").value;
+            if(usern=="admin" && pass=="Admin123+"){
+                alert("login succesfully");
+                return false;
+            }
+            else{
+                alert("No user is registered")
+            }
+        }
+        function registerValidation(){
+            var userna=document.getElementById("user").value;
+            var email2=document.getElementById("email_")
+            if(userna=="Admin_" && email2=="admin@gmail.com"){
+                alert("User already exists");
+                return false;
+            }
+            else{
+                alert("Registered Succesfully");
+            }
         }
     </script>
 </body>

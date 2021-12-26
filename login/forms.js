@@ -109,6 +109,7 @@ function Validation1(){
       text.style.color= "red";
 }
 }
+
 // validation of register
 function Validation2(){
   var form=document.querySelector("#register");
@@ -120,14 +121,14 @@ function Validation2(){
   if (user.match(pattern)){
       form.classList.add("valid");
       form.classList.remove("invalid");
-      text1.innerHTML="You username is valid"; 
-      text1.style.color= "purple";
+      text.innerHTML="You username is valid"; 
+      text.style.color= "purple";
     }
     else {
       form.classList.remove("valid");
       form.classList.add("invalid");
-      text1.innerHTML="Please enter a valid username";
-      text1.style.color= "red";
+      text.innerHTML="Please enter a valid username";
+      text.style.color= "red";
 }
 }
 
@@ -137,8 +138,7 @@ function Validation3()
   var email=document.querySelector("#email_").value;
   var form=document.querySelector("#text3");
   var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/ ;
-  
-
+   
 
   if (email.match(pattern)){ 
     form.classList.add("valid");
@@ -202,3 +202,5 @@ function ErrorHandling(){
     alert(err);
   }
   }
+
+  

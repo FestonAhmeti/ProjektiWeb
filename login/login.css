@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     font-family: sans-serif;
+    
 }
 
 *::selection{
@@ -11,10 +12,10 @@
 .form{
     height:100%;
     width:100%;
-    background-image: url("images/background.1.jpeg");
     background-position: center;
     background-size: cover;
     position:absolute;
+    background: burlywood;
 }
 
 .form-box{
@@ -24,7 +25,8 @@
    margin: 6% auto;
    background:#fff;
    padding: 5px;
-   overflow: hidden;
+   overflow: hidden;   
+   border: 2px solid rgb(154, 66, 39);
 }
 
 .button-box{
@@ -53,7 +55,7 @@
     width:110px;
     height:100%;
     
-    background: linear-gradient(326deg, #292628 0%, #edeaee 74%);
+    background: linear-gradient(326deg, #383228 0%, #c2a783 40%);
     border-radius:30px ;
     transition: .5s;
 }
@@ -64,12 +66,24 @@
    
 }
 .social-icons a{
-  
-    margin:0 12px;
+    /* width: 50px;
+    height: 50px; */
+    margin:0 15px;
     cursor: pointer;
-    padding: 0 15px;
-    color:rgb(0, 0, 0);
-   
+    padding: 0 18px;
+    font-size: 20px;
+}
+.social-icons a:nth-child(1){
+    color: steelblue;
+}
+.social-icons a:nth-child(2){
+    color: rgb(0, 140, 255);
+}
+.social-icons a:nth-child(3){
+    color: steelblue;
+}
+.social-icons a:hover{
+    color:rgb(9, 36, 59);
 }
 .input{
     top:180px;
@@ -96,7 +110,7 @@
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(326deg, #292728 0%, #cec6d1 74%);
+    background: linear-gradient(326deg, #383228 0%, #c2a783 40%);
     border: 0;
     outline: none;
     border-radius: 30px;
