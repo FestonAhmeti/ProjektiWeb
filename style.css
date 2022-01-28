@@ -97,6 +97,7 @@
     margin-top: 5px;
 }
 
+
 /* MAIN */  
 #main{
     background-color: rgb(24, 24, 24);
@@ -663,3 +664,297 @@ footer{
 }
 /* ------------------------ Footer ending ------------------ */
 
+@media (max-width: 850px){
+    
+    #navbar {
+    width: 850px;
+    height: 100px;
+    
+    }
+    #navbar ul li a{
+        font-size: 12pt;
+
+    }
+    #l-nav{
+        width: 55%;
+
+    }
+    #l-nav  li{
+        padding-left: 5px;
+    }
+    #r-nav{
+        margin-right: 40px;
+    }
+    
+    /* ------------------------------------------ */
+    #main{
+        max-width: 850px;
+    }
+    #banner-section{
+        width: 850px;
+        height: 60vh;
+    }
+    #banner-section .input-box{ 
+        width: 300px;
+        height: 40px;
+        margin-left: 30%;
+        margin-top: 220px;
+    }
+    /* -------------------------------------------- */
+    #products{
+        max-width: 785px;
+        max-height: 350px;
+        margin-left: 2.5%;
+        
+    }
+    #product1{
+        width: 350px;
+        height: 170px;
+        background-repeat: no-repeat;
+        background-size: 350px 170px;
+    }
+    #product2{
+        width: 345px;
+        height: 345px;
+        background-repeat: no-repeat;
+        background-size: 345px 345px;
+    }
+    #product2 .prods{
+        margin-left: 10px;
+    }
+
+    #product3{
+        width: 170px;
+        height: 170px;
+        background-repeat: no-repeat;
+        background-size: 175px 170px;    
+         margin-top: -170px;
+
+    }
+    #product3 .prods{
+        margin-top: 0px;
+        margin-left: 95px;
+    }
+    #product4{
+        width: 170px;
+        height: 170px;
+        background-repeat: no-repeat;
+        background-size: 175px 170px;  
+        margin-top: -170px;
+
+    }
+    #product4 .prods{
+        margin-top: 0px;
+    }
+/* -------------------------------------------------- */
+    #wrapper {
+        width: 850px;
+        margin-left: 3.5%;
+    }
+    #carousel {
+        width: 800px;
+        
+    }
+    #wrapper #next{
+        right: 0%;
+    }
+    #wrapper #prev{
+        left: -4%;
+    }
+
+    /* ---------------------------------- */
+
+    #stats{
+        max-width: 850px;
+    }
+
+    /* -------------------------------------- */
+
+    #home-about{
+        max-width: 850px;
+    }
+    #home-about .about-card{
+        max-width: 750px;
+    }
+
+    /* --------------------------------------------------------- */
+
+    #second-carousel{
+        max-width: 850px;
+    }
+
+    #second-carousel #wrapper2{
+        max-width: 90%;
+    }
+
+    /* ---------------------------------------------------------- */
+
+    .quote-container .quote-body{
+        max-width: 830px;
+    }
+
+    /* ------------------------- */
+
+    footer {
+        max-width: 850px;
+    }
+
+}
+
+
+@media (max-width: 500px){
+    
+
+    #navbar {
+    width: 500px;
+    height: 80px;
+    }
+    
+    #l-nav li a img{
+        margin-top: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #navbar ul li a{
+        font-size: 10pt;
+
+    }
+    #l-nav{
+        width: 400px ;
+        margin-left: 0px;
+
+    }
+    #l-nav  li, #r-nav li{
+        padding-left: 5px;
+    }
+    #r-nav {
+        width: 100px;
+        margin-right: 5px;
+    }
+    
+    /* ------------------------------------------ */
+    #main{
+        max-width: 500px;
+    }
+    #banner-section{
+        width: 500px;
+        height: 60vh;
+    }
+    #banner-section .input-box{ 
+        width: 300px;
+        height: 40px;
+        margin-left: 15%;
+        margin-top: 220px;
+    }
+    /* -------------------------------------------- */
+    #products{
+        max-width: 400px;
+        max-height: 650px;
+        margin-left: 4%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #product1, #product4{
+        width: 400px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    #product2, #product3{
+        width: 195px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    #product3{
+        margin-left: 205px;
+        margin-top: -200px;
+    }
+    #product1 .prods{
+        margin-left: 80px;
+    }
+    
+    #product2 .prods{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    #product3 .prods{
+        margin-top: 0px;
+        margin-left: 120px;
+    }
+    
+    #product4 .prods{
+        margin-top: 0px;
+    }
+/* -------------------------------------------------- */
+    #wrapper {
+        width: 500px;
+        margin-left: 5.5%;
+    }
+    /* #carousel {
+        width: 800px;
+        
+    } */
+    #wrapper #next{
+        right: -9%;
+    }
+    #wrapper #prev{
+        left: -9%;
+    }
+
+    /* ---------------------------------- */
+
+    #stats{
+        max-width: 500px;
+    }
+
+    /* -------------------------------------- */
+
+    #home-about{
+        max-width: 500px;
+        height: 700px;
+    }
+    #home-about .about-card{
+        max-width: 500px;
+        height: 650px;
+    }
+    #home-about .about-card .about-imgBox{
+        width: 600px;
+        height: 650px;
+    }
+    #home-about .about-card .about-contentBox{
+        
+        height: 550px;
+    }
+    
+    
+
+    /* --------------------------------------------------------- */
+
+    #second-carousel{
+        max-width: 500px;
+    }
+
+    #second-carousel #wrapper2{
+        max-width: 90%;
+    }
+
+    /* ---------------------------------------------------------- */
+
+    .quote-container .quote-body{
+        max-width: 480px;
+    }
+
+    /* ------------------------- */
+
+    footer {
+        max-width: 500px
+
+}
+
+}

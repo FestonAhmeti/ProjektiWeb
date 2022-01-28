@@ -1761,3 +1761,167 @@ footer{
     color: gray;
 }
 /* ------------------------ Footer ending ------------------ */
+
+@media (max-width: 850px){
+    
+  #navbar {
+  width: 850px;
+  height: 100px;
+  
+  }
+  #navbar ul li a{
+      font-size: 12pt;
+
+  }
+  #l-nav{
+      width: 55%;
+
+  }
+  #l-nav  li{
+      padding-left: 5px;
+  }
+  #r-nav{
+      margin-right: 40px;
+  }
+
+  /* ------------------------------------------ */
+  
+  #newProducts-slider{
+    width: 850px;
+  }
+
+  /* ----------------- */
+
+  .collection{
+    width: 850px;
+  }
+  .collection-div{
+    flex-direction: column;
+    height: 850px;
+  }
+  .collection-div #left-side{
+    width: 100%;
+    height: 800px;
+  }
+
+  .collection-div #right-side{
+    width: 100%;
+    height: 350px;
+  }
+
+  .collection-div #right-side button {
+    width: 80px;
+    height: 35px;
+  }
+/* ----------------------------------- */
+
+ 
+
+  .products-grid #content div button, #products-grid-2 #content2 div button{
+    left: 33%;
+  }
+
+ 
+
+  /* ------------------------- */
+
+  .rooms-div{
+    max-width: 850px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .rooms-div #rooms-div-container{
+    width: 90%;
+  }
+
+  .rooms-div #rooms-div-container{
+    flex-wrap: wrap;
+  }
+
+  .rooms-div #rooms-div-container div  {
+    width: 220px;
+    margin-top: 20px;
+  }
+
+  .rooms-div #rooms-div-container div a button {
+    left: 30%;
+  }
+  /* ----------------- */
+
+  footer {
+      max-width: 850px;
+  }
+
+}
+
+
+@media (max-width: 500px){
+    
+
+  #navbar {
+  width: 500px;
+  height: 80px;
+  }
+  
+  #l-nav li a img{
+      margin-top: 5px;
+      width: 60px;
+      height: 60px;
+  }
+
+  #navbar ul li a{
+      font-size: 10pt;
+
+  }
+  #l-nav{
+      width: 400px ;
+      margin-left: 0px;
+
+  }
+  #l-nav  li, #r-nav li{
+      padding-left: 5px;
+  }
+  #r-nav {
+      width: 100px;
+      margin-right: 5px;
+  }
+  
+  /* ------------------------------------------ */
+  #newProducts-slider{
+    width: 500px;
+  }
+
+  .hero-left .layers .layer:nth-child(1) > span {
+    font-size: 19pt;
+  }
+
+  .hero-left .layers .layer__info {
+    padding-left: 10px;
+}
+
+/* ------------------------------ */
+
+  .collection{
+    max-width: 500px;
+    height: 750px;
+  }
+
+  .collection-div {
+    margin-top: 0px;
+  }
+
+  .collection .collection-div #left-side{
+    height: 400px;
+  }
+
+  #show-hide-button {
+    margin-left: 37%;
+}
+  /* ------------------------- */
+
+  footer {
+      max-width: 500px
+
+}
+
+}
