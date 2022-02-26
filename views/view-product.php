@@ -21,7 +21,13 @@ if(isset($_GET['pid'])){
     }
     
 }?>
-
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="../css/view-product.css">
+        
+    </head>
+    <body>
 <main id="main">
     <div class="wrapper">
         <div class="view-product">
@@ -33,12 +39,12 @@ if(isset($_GET['pid'])){
                     <h1><?= $product['emri']?></h1>
                 </div>
                 <div>
-                    <p><b>Kategoria </b><?= $product['kategoria']?></p>
-                    <p><b>Sasia </b><?= $product['sasia']?> artikuj</p>
-                    <p><b>Përshkrimi </b><?= $product['pershkrimi']?></p>
+                    <p><b>Category: </b><?= $product['kategoria']?></p>
+                    <p><b>Quantity: </b><?= $product['sasia']?> artikuj</p>
+                    <p><b>Description: </b><?= $product['pershkrimi']?></p>
                 </div>
                 <div>
-                    <p><b>Cmimi </b><?= $product['cmimi']?>&euro;</p>
+                    <p><b>Price: </b><?= $product['cmimi']?>&euro;</p>
                     <?php
                     if(isset($_SESSION['is_logged_in']) == 1){
                         $isInCart = false;
@@ -49,25 +55,25 @@ if(isset($_GET['pid'])){
                             }
                         }
                         if($isInCart){ ?>
-                            <p><b>Produkti është në shportë</b></p>
+                            <p><b>Product it's in the cart!</b></p>
                         <?php } else if($product['sasia'] == 0) { ?>
-                            <p id="nostock">Nuk ka stok</p>
+                            <p id="nostock">Not in stock!</p>
                         <?php }
                         else { ?>
                             <a href=" <?php echo "../programLogic/upload.php?action=add-to-cart&product-id=".$product['id'] ?>">Shto në shportë</a>
                         <?php }
                     }
                     else if($product['sasia'] == 0){ ?>
-                        <p id="nostock">Nuk ka stok</p>
+                        <p id="nostock">Not in stock!</p>
                     <?php } else if(!isset($_SESSION['is_logged_in'])) { ?>
-                        <a href="login.php" class="button">Kyqu për të shtuar në shportë</a>
+                        <a href="login.php" class="button">Log In to add to cart!</a>
                     <?php } else { ?>
                         <a href=" <?php echo "../programLogic/upload.php?action=add-to-cart&product-id=".$product['id'] ?>">Shto në shportë</a>
                     <?php } ?>
                 </div>
                 <div>
                     <?php if($admin != null){ ?>
-                        <p>*Ky produkt është postuar nga <?= $admin['first_name'].' '.$admin['last_name']?></p>
+                        <p>*This product it's posted by:  <?= $admin['first_name'].' '.$admin['last_name']?></p>
                     <?php } ?>
                 </div>
             </div>
@@ -76,7 +82,7 @@ if(isset($_GET['pid'])){
         <?php if(count($productsOfSameCategory) > 1) {?>
             <div class="products-container">
             <div class="section-title">
-                    <h3>Produkte të ngjashme</h3>
+                    <h3>Similar Products</h3>
                     <hr class="divider">
                 </div>
                     <div class="products-panel">
@@ -89,7 +95,7 @@ if(isset($_GET['pid'])){
                             <div>
                                 <h3><?php echo $catProduct['emri']; ?></h3>
                                 <h2><?php echo $catProduct['cmimi']; ?>&euro;</h2>
-                                <a class="button" href="<?php echo "view-product.php?pid=$pid" ?>">Shiko Produktin</a>
+                                <a class="button" href="<?php echo "view-product.php?pid=$pid" ?>">Check!</a>
                             </div>
                         </div>
                         <?php } ?>

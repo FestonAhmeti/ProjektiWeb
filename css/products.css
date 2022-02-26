@@ -120,14 +120,14 @@ li {
 }
 
 .button {
-    background-color: #00A0FF;
+    background-color: #832323;
     color: white;
     border-radius: 3px;
     font-size: 11pt;
 }
 
 .button:hover {
-    background-color: #005180;
+    background-color: #5c1111;
 }
 
 .active {
@@ -221,7 +221,7 @@ header {
 }
 
 .navbar ul a:not(.button):hover {
-    border-bottom: 2px solid #323232;
+    border-bottom: 2px solid #5c1111;
 }
 
 
@@ -326,7 +326,7 @@ header {
 }
 
 .products-panel .square div:nth-child(2) a:hover {
-    background-color: #005180;
+    background-color: #5c1111;
     color: white;
     border: none;
     cursor: pointer;
