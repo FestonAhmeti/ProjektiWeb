@@ -5,50 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Homegoods</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="b.css">
-    <link rel="stylesheet" href="carousel2/carousel.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/b.css">
+    <link rel="stylesheet" href="../carousel2/carousel.css">
     <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <button id="to-top-btn"><i class="fas fa-arrow-up"></i></button>
-    <script src="totop.js"></script>
-    <div id="navbar">
-        
-        <ul id="l-nav">
-            <li><a href="index.html"><img src="../ProjektiWeb/images/logo_transparent.png" alt="Logo"></a></li>
-            <li><a href="index.html" id="selected-page">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-            <li><a href="sale.html">SALE!</a></li>
-        </ul>
-        <ul id="r-nav">
-            <li><a href="login/login.html">Login</a></li>
-            <li><a href="#"><img src="../ProjektiWeb/images/cart-icon.jpg" alt="Cart"></a></li>
-        </ul>
-
-    
-        
-    </div>
+    <script src="../script/totop.js"></script>
+    <?php 
+        include '../components/header.php';
+    ?>
     <div id="main">
 
         <section id="banner-section">
             <div class="slideshow-item">
-                <img src="images/furntiure1.jpg" alt="">
+                <img src="../images/furntiure1.jpg" alt="">
             </div>
             <div class="slideshow-item">
-                <img src="images/furntiure2.jpg" alt="">
+                <img src="../images/furntiure2.jpg" alt="">
             </div>
             <div class="slideshow-item">
-                <img src="images/furntiure3.jpg" alt="">
+                <img src="../images/furntiure3.jpg" alt="">
             </div>
             <div class="slideshow-item">
-                <img src="images/furntiure4.jpg" alt="">
+                <img src="../images/furntiure4.jpg" alt="">
             </div>
             <div class="slideshow-item">
-                <img src="images/furntiure5.jpg" alt="">
+                <img src="../images/furntiure5.jpg" alt="">
             </div>
             <div class="input-box">
                 <i class="fas fa-search"></i>
@@ -95,7 +80,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/stool.jpg" class="products_">
+                            <img src="../images/stool.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -110,7 +95,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/sofa.jpg" class="products_">
+                            <img src="../images/sofa.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -125,7 +110,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/table.jpg" class="products_">
+                            <img src="../images/table.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -140,7 +125,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/bed.jpg" class="products_">
+                            <img src="../images/bed.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -155,7 +140,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/table-2.jpg" class="products_">
+                            <img src="../images/table-2.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -170,7 +155,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/couch.jpg" class="products_">
+                            <img src="../images/couch.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -185,7 +170,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/sofa1.jpg" class="products_">
+                            <img src="../images/sofa1.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -200,7 +185,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/bedroom.jpg" class="products_">
+                            <img src="../images/bedroom.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -215,7 +200,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/table-small.jpg" class="products_">
+                            <img src="../images/table-small.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -230,7 +215,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/sofa2.jpg" class="products_">
+                            <img src="../images/sofa2.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -245,7 +230,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/table-2.jpg" class="products_">
+                            <img src="../images/table-2.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -260,7 +245,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/chair.jpg" class="products_">
+                            <img src="../images/chair.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -275,7 +260,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/couch.jpg" class="products_">
+                            <img src="../images/couch.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -290,7 +275,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/cabinet.jpg" class="products_">
+                            <img src="../images/cabinet.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -305,7 +290,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/desk.jpg" class="products_">
+                            <img src="../images/desk.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -320,7 +305,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/sofa.jpg" class="products_">
+                            <img src="../images/sofa.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -335,7 +320,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/ligne.jpg" class="products_">
+                            <img src="../images/ligne.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -350,7 +335,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/sofa2.jpg" class="products_">
+                            <img src="../images/sofa2.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -365,7 +350,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/stool2.jpg" class="products_">
+                            <img src="../images/stool2.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -380,7 +365,7 @@
                         <!--img------------>
                         <div class="products-img">
                             
-                            <img src="images/bedroom.jpg" class="products_">
+                            <img src="../images/bedroom.jpg" class="products_">
                             
                         </div>
                         <div class="products-content">
@@ -415,7 +400,7 @@
                 <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
               </svg>
             </button>
-            <script src="carousel.js"></script>
+            <script src="../script/carousel.js"></script>
             </div>
             <!------------------------------------>
     <div id="stats">
@@ -456,7 +441,7 @@
     <div id="home-about" class="about-container">
         <div class="about-card">
             <div class="about-imgBox">
-                <img src="./images/meeting.jpg" alt="">
+                <img src="../images/meeting.jpg" alt="">
             </div>
 
             <div class="about-contentBox">
@@ -479,7 +464,7 @@
         <div class="container-second">
             <div class="card">
                 <div class="imgBx">
-                    <img src="images/sofa3.png">
+                    <img src="../images/sofa3.png">
                 </div>
 
                 <div class="contentBx">
@@ -506,7 +491,7 @@
 
             <div class="card">
                 <div class="imgBx">
-                    <img src="images/smalltable.png">
+                    <img src="../images/smalltable.png">
                 </div>
 
                 <div class="contentBx">
@@ -531,7 +516,7 @@
             <!-- --------------box-3-------------- -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="images/fotel.png">
+                    <img src="../images/fotel.png">
                 </div>
 
                 <div class="contentBx">
@@ -556,7 +541,7 @@
             <!-- --------------box-4-------------- -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="images/carpet.png">
+                    <img src="../images/carpet.png">
                 </div>
 
                 <div class="contentBx">
@@ -581,7 +566,7 @@
             <!-- --------------box-5-------------- -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="images/pc-table.png">
+                    <img src="../images/pc-table.png">
                 </div>
 
                 <div class="contentBx">
@@ -606,7 +591,7 @@
             <!-- --------------box-6-------------- -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="images/grayfotel.png">
+                    <img src="../images/grayfotel.png">
                 </div>
 
                 <div class="contentBx">
@@ -631,7 +616,7 @@
             <!-- --------------box-7-------------- -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="images/bed.png">
+                    <img src="../images/bed.png">
                 </div>
 
                 <div class="contentBx">
@@ -656,7 +641,7 @@
             <!-- --------------box-8-------------- -->
             <div class="card">
                 <div class="imgBx">
-                    <img src="images/sphericaltable.png">
+                    <img src="../images/sphericaltable.png">
                 </div>
 
                 <div class="contentBx">
@@ -732,27 +717,12 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo-container">
-                <img src="images/logo_transparent.png" id="f-logo" alt="logo" />
-            </div>
-            <address><p>UBT College - Higher Education Institution</br>
-                Lagjja Kalabria, p.n.
-                10000, Prishtin&euml;,
-                Republic of Kosovo</p></address>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/ArchiDesiign" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/archidesiign?lang=gl" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://myaccount.google.com/profile"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="https://www.youtube.com/watch?v=_C5vCGB8Xx0" target="_blank"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-            <p>Copyright &copy; 2021 HomeGoods </p>
-            </div>
-        </footer>
-        <script src="main.js"></script>
-        <script src="stats.js"></script>
-        <script src="carousel2/carousel2.js"></script>
+    <?php 
+        include '../components/footer.php'
+    ?>
+        <script src="../script/main.js"></script>
+        <script src="../script/stats.js"></script>
+        <script src="../carousel2/carousel2.js"></script>
 
         
     </body>

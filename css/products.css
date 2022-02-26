@@ -72,9 +72,7 @@
     
 }
 
-#l-nav #selected-page {
-  border-bottom: 2px solid rgb(93, 100, 201);
-}
+
 
 #l-nav li a img{
     margin-top: 5px;
@@ -188,7 +186,7 @@ html, body, #newProducts-slider {
   font-weight: bold;
 }
 .hero-left .layers .layer__image {
-  background-image: url("images/sofa1.webp");  
+  background-image: url("../images/sofa1.webp");  
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center center;
@@ -355,7 +353,7 @@ html, body, #newProducts-slider {
     width: 65%;
     height: 100%;
     max-height: 100%;
-    background-image: url(images/gaming-photo.webp);
+    background-image: url(../images/gaming-photo.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
@@ -770,7 +768,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 1 / 1;
   grid-row: 1/9;
-  background-image: url(images/grid1.png) !important;
+  background-image: url(../images/grid1.png) !important;
 }
 
 #content .one button{
@@ -811,7 +809,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 2 / 2;
   grid-row: 1/8;
-  background-image: url(images/grid2.png) !important;
+  background-image: url(../images/grid2.png) !important;
 }
 #content .two button{
   position: absolute;
@@ -849,7 +847,7 @@ html, body, #newProducts-slider {
   grid-column: 3 / 3; 
   position: relative;
   grid-row: 1/9;
-  background-image: url(images/grid3.png) !important;
+  background-image: url(../images/grid3.png) !important;
 }
 #content .three button{
   position: absolute;
@@ -887,7 +885,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 1/1;
   grid-row: 9/17;
-  background-image: url(images/grid4\ .jpg) !important;
+  background-image: url(../images/grid4\ .jpg) !important;
 }
 #content .four button{
   position: absolute;
@@ -925,7 +923,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 2/2;
   grid-row: 8/16;
-  background-image: url(images/grid5.png) !important;
+  background-image: url(../images/grid5.png) !important;
 }
 #content .five button{
   position: absolute;
@@ -963,7 +961,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 3/3;
   grid-row: 9/17;
-  background-image: url(images/grid6.png) !important;
+  background-image: url(../images/grid6.png) !important;
 
 }
 #content .six button{
@@ -1002,7 +1000,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 1 / 1;
   grid-row: 17/25;
-  background-image: url(images/grid7.png) !important;
+  background-image: url(../images/grid7.png) !important;
 
 }
 #content .seven button{
@@ -1041,7 +1039,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 2/2;
   grid-row: 16/24;
-  background-image: url(images/grid8.png) !important;
+  background-image: url(../images/grid8.png) !important;
 
 }
 #content .eight button{
@@ -1080,7 +1078,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 3/3;
   grid-row: 17/25;
-  background-image: url(images/grid9.png) !important;
+  background-image: url(../images/grid9.png) !important;
 
 }
 #content .nine button{
@@ -1119,7 +1117,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 1 / 1;
   grid-row: 25/33;
-  background-image: url(images/grid10.png) !important;
+  background-image: url(../images/grid10.png) !important;
 
 }
 #content .ten button{
@@ -1158,7 +1156,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 2/2;
   grid-row: 24/32;
-  background-image: url(images/grid11.png) !important;
+  background-image: url(../images/grid11.png) !important;
 
 }
 #content .eleven button{
@@ -1197,7 +1195,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 3/3;
   grid-row: 25/33;
-  background-image: url(images/grid12.png) !important;
+  background-image: url(../images/grid12.png) !important;
 
 }
 #content .twelve button{
@@ -1236,7 +1234,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 1 / 1;
   grid-row: 33/41;
-  background-image: url(images/grid13.png) !important;
+  background-image: url(../images/grid13.png) !important;
 
 }
 #content .thirteen button{
@@ -1275,7 +1273,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 2/2;
   grid-row: 32/40;
-  background-image: url(images/grid14.png) !important;
+  background-image: url(../images/grid14.png) !important;
 
 }
 #content .fourteen button{
@@ -1314,7 +1312,7 @@ html, body, #newProducts-slider {
   position: relative;
   grid-column: 3/3;
   grid-row: 33/41;
-  background-image: url(images/grid15.png) !important;
+  background-image: url(../images/grid15.png) !important;
 
 }
 #content .fifteen button{
@@ -1406,7 +1404,7 @@ background: #777;
 position: relative;
 grid-column: 1 / 1;
 grid-row: 2/9;
-background-image: url(images/grid10a.png) !important;
+background-image: url(../images/grid10a.png) !important;
 
 }
 
@@ -1505,94 +1503,94 @@ background-image: url(images/grid10a.png) !important;
 position: relative;
 grid-column: 2 / 2;
 grid-row: 1/8;
-background-image: url(images/grid2a.png) !important;
+background-image: url(../images/grid2a.png) !important;
 }
 #content2 .three{
 position: relative;
 grid-column: 3 / 3; 
 grid-row: 2/9;
-background-image: url(images/grid3a.png) !important;
+background-image: url(../images/grid3a.png) !important;
 }
 #content2 .four{
 position: relative;
 grid-column: 1/1;
 grid-row: 9/17;
-background-image: url(images/grid4a.png) !important;
+background-image: url(../images/grid4a.png) !important;
 }
 #content2 .five{
 position: relative;
 grid-column: 2/2;
 grid-row: 8/16;
-background-image: url(images/grid5a.png) !important;
+background-image: url(../images/grid5a.png) !important;
 }
 #content2 .six{
 position: relative;
 grid-column: 3/3;
 grid-row: 9/17;
-background-image: url(images/grid6a.png) !important;
+background-image: url(../images/grid6a.png) !important;
 
 }
 #content2 .seven{
 position: relative;
 grid-column: 1 / 1;
 grid-row: 17/25;
-background-image: url(images/grid7a.png) !important;
+background-image: url(../images/grid7a.png) !important;
 
 }
 #content2 .eight{
 position: relative;
 grid-column: 2/2;
 grid-row: 16/24;
-background-image: url(images/grid8a.png) !important;
+background-image: url(../images/grid8a.png) !important;
 
 }
 #content2 .nine{
 position: relative;
 grid-column: 3/3;
 grid-row: 17/25;
-background-image: url(images/grid9a.png) !important;
+background-image: url(../images/grid9a.png) !important;
 
 }
 #content2 .ten{
 position: relative;
 grid-column: 1 / 1;
 grid-row: 25/33;
-background-image: url(images/grid10a.png) !important;
+background-image: url(../images/grid10a.png) !important;
 
 }
 #content2 .eleven{
 position: relative;
 grid-column: 2/2;
 grid-row: 24/32;
-background-image: url(images/grid11a.png) !important;
+background-image: url(../images/grid11a.png) !important;
 
 }
 #content2 .twelve{
 position: relative;
 grid-column: 3/3;
 grid-row: 25/33;
-background-image: url(images/grid12a.png) !important;
+background-image: url(../images/grid12a.png) !important;
 
 }
 #content2 .thirteen{
 position: relative;
 grid-column: 1 / 1;
 grid-row: 33/41;
-background-image: url(images/grid13a.png) !important;
+background-image: url(../images/grid13a.png) !important;
 
 }
 #content2 .fourteen{
 position: relative;
 grid-column: 2/2;
 grid-row: 32/40;
-background-image: url(images/grid14a.png) !important;
+background-image: url(../images/grid14a.png) !important;
 
 }
 #content2 .fifteen{
 position: relative;
 grid-column: 3/3;
 grid-row: 33/41;
-background-image: url(images/grid15a.png) !important;
+background-image: url(../images/grid15a.png) !important;
 
 }
 #content2 .sixteen{opacity: 0;}
@@ -1632,7 +1630,7 @@ background-image: url(images/grid15a.png) !important;
 
 .rooms-div #rooms-div-container #one{
   position: relative;
-  background-image: url(images/rooms-living-room.png);
+  background-image: url(../images/rooms-living-room.png);
 }
 .rooms-div #one button,
 .rooms-div #two button,
@@ -1689,23 +1687,23 @@ background-image: url(images/grid15a.png) !important;
 /* Div Two */
 .rooms-div #rooms-div-container #two{
   position: relative;
-  background-image: url(images/rooms-bedroom.png);
+  background-image: url(../images/rooms-bedroom.png);
 }
 .rooms-div #rooms-div-container #three{
   position: relative;
-  background-image: url(images/rooms-kitchen.png);
+  background-image: url(../images/rooms-kitchen.png);
 }
 .rooms-div #rooms-div-container #four{
   position: relative;
-  background-image: url(images/rooms-bathroom.jpg);
+  background-image: url(../images/rooms-bathroom.jpg);
 }
 .rooms-div #rooms-div-container #five{
   position: relative;
-  background-image: url(images/rooms-dining\ room.png);
+  background-image: url(../images/rooms-dining\ room.png);
 }
 .rooms-div #rooms-div-container #six{
   position: relative;
-  background-image: url(images/rooms-lightning.png);
+  background-image: url(../images/rooms-lightning.png);
 }
 
 /* ------------------------ Footer Start ------------------ */

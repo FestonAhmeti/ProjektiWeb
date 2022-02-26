@@ -71,9 +71,7 @@
     border-bottom: 2px solid rgb(93, 100, 201);
     
 }
-#l-nav #selected-page {
-    border-bottom: 2px solid rgb(93, 100, 201);
-  }
+
 
 #l-nav li a img{
     margin-top: 5px;
@@ -228,7 +226,7 @@
     
     width: 700px;
     height: 345px;
-    background-image: url(images/sofa1.png);
+    background-image: url(../images/sofa1.png);
     
 }
 
@@ -239,7 +237,7 @@
 }
 
 #product1:hover{
-    background-image: url(images/sofa1a.png);
+    background-image: url(../images/sofa1a.png);
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -259,7 +257,7 @@
     width: 690px;
     height: 695px;
     margin-left: 10px;
-    background-image: url(images/chair2.png);
+    background-image: url(../images/chair2.png);
 
 }
 #product2 div{
@@ -267,7 +265,7 @@
     margin-top: 20px;
 }
 #product2:hover{
-    background-image: url(images/chair2a.jpg);
+    background-image: url(../images/chair2a.jpg);
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -285,13 +283,13 @@
     width: 345px;
     height: 340px;
     margin-top: -345px;
-    background-image: url(images/chair1.png);
+    background-image: url(../images/chair1.png);
     
     
 }
 
 #product3:hover{
-    background-image: url(images/chair1a.png);
+    background-image: url(../images/chair1a.png);
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -316,7 +314,7 @@
     height: 340px;
     margin-top: -345px;
     margin-left: 10px;
-    background-image: url(images/komod1.png);
+    background-image: url(../images/komod1.png);
     
 }
 #product4 div{
@@ -325,7 +323,7 @@
 }
 
 #product4:hover{
-    background-image: url(images/komod1a.png);
+    background-image: url(../images/komod1a.png);
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;

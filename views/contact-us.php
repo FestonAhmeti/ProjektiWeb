@@ -4,25 +4,13 @@
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Contact Form</title>
-            <link rel="stylesheet" href="contact-us.css" />
+            <link rel="stylesheet" href="../css/contact-us.css" />
             <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
         </head>
         <body>
-            <!-- Navbar -->
-            <div id="navbar">
-                <ul id="l-nav">
-                    <li><a href="index.html"><img src="../ProjektiWeb/images/logo_transparent.png" alt="Logo"></a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="rooms.html">Rooms</a></li>
-                    <li><a href="contact-us.html" id="selected-page">Contact Us</a></li>
-                    <li><a href="sale.html">SALE!</a></li>
-                </ul>
-                <ul id="r-nav">
-                    <li><a href="login/login.html">Login</a></li>
-                    <li><a href="#"><img src="../ProjektiWeb/images/cart-icon.jpg" alt="Cart"></a></li>
-                </ul>
-            </div>
+            <?php 
+                include '../components/header.php';
+            ?>
             <!-- Main page for contact us form -->
             <div class="container">
             <span class="big-circle"></span>
@@ -36,15 +24,15 @@
 
                 <div class="info">
                     <div class="information">
-                    <img src="images/map.png" class="icon" alt="" />
+                    <img src="../images/map.png" class="icon" alt="" />
                     <p>HomeGoods Headquarters, LA 12847</p>
                     </div>
                     <div class="information">
-                    <img src="images/email.png" class="icon" alt="" />
+                    <img src="../images/email.png" class="icon" alt="" />
                     <p>support@homegoods.com</p>
                     </div>
                     <div class="information">
-                    <img src="images/telephone-call.png" class="icon" alt="" />
+                    <img src="../images/telephone-call.png" class="icon" alt="" />
                     <p>+1 245-965-485</p>
                     </div>
                 </div>
@@ -105,25 +93,10 @@
             </div>
             <!-- Footer -->
 
-            <footer>
-                <div class="footer-content">
-                    <div class="footer-logo-container">
-                        <img src="images/logo_transparent.png" id="f-logo" alt="logo" />
-                    </div>
-                    <address><p>UBT College - Higher Education Institution</br>
-                        Lagjja Kalabria, p.n.
-                        10000, Prishtin&euml;,
-                        Republic of Kosovo</p></address>
-                    <ul class="socials">
-                        <li><a href="https://www.facebook.com/ArchiDesiign" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/archidesiign?lang=gl" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://myaccount.google.com/profile"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="https://www.youtube.com/watch?v=_C5vCGB8Xx0" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
-                    <p>Copyright &copy; 2021 HomeGoods </p>
-                    </div>
-                </footer>
+            <?php 
+                 include '../components/footer.php'
+            ?>
 
-            <script src="contact-us.js"></script>
+            <script src="../script/contact-us.js"></script>
         </body>
 </html>

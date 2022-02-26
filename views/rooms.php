@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | Homegoods</title>
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="../css/products.css">
     <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
 
    
@@ -13,21 +13,10 @@
 </head>
 <body>
     <button id="to-top-btn"><i class="fas fa-arrow-up"></i></button>
-    <script src="totop.js"></script>
-    <div id="navbar">
-        <ul id="l-nav">
-            <li><a href="index.html"><img src="../ProjektiWeb/images/logo_transparent.png" alt="Logo"></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html" id="selected-page">Products</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li ><a href="contact-us.html" >Contact Us</a></li>
-            <li><a href="sale.html">SALE!</a></li>
-        </ul>
-        <ul id="r-nav">
-            <li><a href="login/login.html">Login</a></li>
-            <li><a href="#"><img src="../ProjektiWeb/images/cart-icon.jpg" alt="Cart"></a></li>
-        </ul>
-    </div>
+    <script src="../script/totop.js"></script>
+    <?php 
+        include '../components/header.php';
+    ?>
     <div id="newProducts-slider">
 
             <div class="hero-left">
@@ -55,7 +44,7 @@
                 </div>
                 <div class="layer" data-scene="2">
                   <span>THE KIVIK</span>
-                  <div class="layer__image" style="background-image: url(images/sofa2.webp)"></div>
+                  <div class="layer__image" style="background-image: url(../images/sofa2.webp)"></div>
                   <div class="layer__info">
                     <div>
                         <strong>Name</strong>
@@ -75,7 +64,7 @@
                 </div>
                 <div class="layer" data-scene="3">
                   <span>THE LANDSKRONA</span>
-                  <div class="layer__image" style="background-image: url(images/sofa3.webp)"></div>
+                  <div class="layer__image" style="background-image: url(../images/sofa3.webp)"></div>
                   <div class="layer__info">
                     <div>
                         <strong>Name</strong>
@@ -102,9 +91,9 @@
               <div class="layer" data-scene="2"></div>
               <div class="layer" data-scene="3"></div>
               <div class="photo-frame">
-                <div class="layer layer-displayed" style="background-image: url(images/sofa1b.webp)" data-scene="1"></div>
-                <div class="layer" style="background-image: url(images/sofa2a.webp)" data-scene="2"></div>
-                <div class="layer" style="background-image: url(images/sofa3a.webp)" data-scene="3"></div>
+                <div class="layer layer-displayed" style="background-image: url(../images/sofa1b.webp)" data-scene="1"></div>
+                <div class="layer" style="background-image: url(../images/sofa2a.webp)" data-scene="2"></div>
+                <div class="layer" style="background-image: url(../images/sofa3a.webp)" data-scene="3"></div>
                 <div class="cover"></div>
               </div>
               <div class="photo-name">
@@ -124,9 +113,9 @@
                 </div>
               </div>
               <div class="photo-frame">
-                <div class="layer layer-displayed" style="background-image: url(images/sofa1a.webp)" data-scene="1"></div>
-                <div class="layer" style="background-image: url(images/sofa2b.webp)" data-scene="2"></div>
-                <div class="layer" style="background-image: url(images/sofa3b.webp)" data-scene="3"></div>
+                <div class="layer layer-displayed" style="background-image: url(../images/sofa1a.webp)" data-scene="1"></div>
+                <div class="layer" style="background-image: url(../images/sofa2b.webp)" data-scene="2"></div>
+                <div class="layer" style="background-image: url(../images/sofa3b.webp)" data-scene="3"></div>
                 <div class="cover"></div>
               </div>
             </div>
@@ -265,26 +254,11 @@
     </div>
     <!-- Footer -->
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo-container">
-                <img src="images/logo_transparent.png" id="f-logo" alt="logo" />
-            </div>
-            <address><p>UBT College - Higher Education Institution</br>
-                Lagjja Kalabria, p.n.
-                10000, Prishtin&euml;,
-                Republic of Kosovo</p></address>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/ArchiDesiign" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/archidesiign?lang=gl" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://myaccount.google.com/profile"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="https://www.youtube.com/watch?v=_C5vCGB8Xx0" target="_blank"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-            <p>Copyright &copy; 2021 HomeGoods </p>
-            </div>
-        </footer>
+    <?php 
+        include '../components/footer.php';
+    ?>
 
 
-    <script src="products.js"></script>
+    <script src="../script/products.js"></script>
 </body>
 </html>

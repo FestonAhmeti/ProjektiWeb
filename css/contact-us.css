@@ -57,9 +57,6 @@ textarea {
     width: 100px;
     height: 100px;
 }
-#l-nav #selected-page {
-    border-bottom: 2px solid rgb(93, 100, 201);
-  }
 
 #r-nav{
     width: 50%;
