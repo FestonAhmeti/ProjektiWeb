@@ -1,7 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
+/*-------------------------- Back to top button -----------------------*/
+#to-top-btn{
+    display: inline-block;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+    outline: none;
+    border: 3px solid rgb(32,32,32);
+    border-radius: 1px;
+    transition: background-color 0.5s, color 0.5s, opacity 0.5s, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 30;
+}
+
+#to-top-btn:hover,  #to-top-btn:focus{
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+
+#to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+/*--------------------------End of to top Button------------------------------*/
+
 #navbar {
     width: 100%;
     height: 100px;
@@ -38,6 +73,7 @@
 }
 
 
+
 #l-nav li a img{
     margin-top: 5px;
     width: 100px;
@@ -59,17 +95,1616 @@
     height: 30px;
     margin-top: 5px;
 }
-/* ------------- End of Navbar ----------- */
 
-#main{
-    height: 750px;
+/* Slider nder NavBar */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+:root {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  --color1: #525252;
+  --color2: #7c6957;
+  --color3: #545a48;
 }
-#main img{
+:root * {
+  outline: none;
+}
+
+html, body, #newProducts-slider {
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#newProducts-slider {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+ .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-left {
+  padding-top: 15px;  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-left h1 {
+  text-align: center;
+}
+.hero-left button {
+  position: absolute;
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.hero-left button:last-of-type {
+  right: 0;
+}
+.hero-left button:active {
+  transform: scale(0.9);
+}
+.hero-left .layers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.hero-left .layers .layer {
+  display: grid;
+  grid-template-rows: 6rem 3fr 1fr;
+  background-color: white;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition-delay: 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.hero-left .layers .layer-displayed {
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 1;
+}
+.hero-left .layers .layer-displayed-exit {
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: 1;
+}
+.hero-left .layers .layer > span {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero-left .layers .layer__image {
+  background-image: url("../images/sofa1.webp");  
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+}
+.hero-left .layers .layer__info {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  column-gap: 2rem;
+  font-size: 1.5rem;
+}
+.hero-left .layers .layer__info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-left .layers .layer__info div:first-child {
+  align-items: flex-end;
+  color: gray;
+}
+.hero-left .layers .layer__info div:last-child {
+  font-weight: bold;
+}
+.hero-left .layers .layer:nth-child(1) > span {
+  color: var(--color1);
+}
+.hero-left .layers .layer:nth-child(2) > span {
+  color: var(--color2);
+}
+.hero-left .layers .layer:nth-child(3) > span {
+  color: var(--color3);
+}
+.hero-right {
+  grid-column: 2;
+  position: relative;
+  overflow: hidden;
+}
+.hero-right > .layer {
+  background-color: #E41936;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition-delay: 0.5s;
+}
+.hero-right > .layer-displayed {
+  transform: translateX(0);
+  z-index: 2;
+}
+.hero-right > .layer-displayed-exit {
+  transition-delay: 1s;
+  transition-duration: 0;
+  z-index: 1;
+}
+.hero-right > .layer:nth-child(1) {
+  background-color: var(--color1);
+}
+.hero-right > .layer:nth-child(2) {
+  background-color: var(--color2);
+}
+.hero-right > .layer:nth-child(3) {
+  background-color: var(--color3);
+}
+.hero-right .photo-name {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  width: 20%;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+.hero-right .photo-name span {
+  display: block;
+}
+.hero-right .photo-name__wrapper {
+  position: relative;
+}
+.hero-right .photo-name__title {
+  font-weight: bold;
+}
+.hero-right .photo-name .layer {
+  padding: 10px;
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.hero-right .photo-name .layer-displayed {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+.hero-right .photo-frame {
+  position: absolute;
+  overflow: hidden;
+  animation-play-state: paused;
+}
+.hero-right .photo-frame:nth-child(4) {
+  top: 10%;
+  left: 10%;
+  width: 40%;
+  height: 40%;
+  z-index: 3;
+}
+.hero-right .photo-frame:nth-child(4) .cover {
+  background-color: black;
+}
+.hero-right .photo-frame:last-child {
+  top: 40%;
+  left: 20%;
+  width: 65%;
+  height: 50%;
+  z-index: 2;
+}
+.hero-right .photo-frame .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  transition: width 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.hero-right .photo-frame .layer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition-delay: 0.5s;
+}
+.hero-right .photo-frame .layer-displayed {
+  opacity: 1;
+}
+
+@keyframes cover {
+  0% {
+    width: 0;
+  }
+  50% {
     width: 100%;
-    height: 750px;
+  }
+  95% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
 }
 
 
+/* Div me reklam per nje collection */
+.collection{
+  background-color: #2e2e2e;
+}
+
+.collection-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: white;
+    height: 700px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.collection-div #left-side{
+    position: relative;
+    background-color: red;
+    width: 65%;
+    height: 100%;
+    max-height: 100%;
+    background-image: url(../images/gaming-photo.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+  .collection-div #left-side .buttons{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .collection-div #left-side #button1 {
+      position: absolute;
+      left: 63%;
+      top: 85%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  /* -----------Button 1 Hover --------*/
+
+  .collection-div #left-side #button1-div {
+      position: absolute;
+      width: 120px;
+      height: 110px;
+      background-color: white;
+      left: 67%;
+      top: 80%;
+      display: none;
+      font-family: sans-serif;
+  }
+  
+      
+  .collection-div #left-side #button1:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 63%;
+      top: 85%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+      
+  }
+
+  .collection-div #left-side #anchor:hover + #button1-div {
+      display: block;
+      font-size: 13pt;
+  }
+  .collection-div #left-side #anchor:hover + #button1-div h5 {
+      margin: 5px 10px;
+  }
+  .collection-div #left-side #anchor:hover + #button1-div h6 {
+      color: red;
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+  }
+  .collection-div #left-side #anchor:hover + #button1-div p {
+      font-family: sans-serif;
+      margin-left: 10px;
+      font-size: 0.83em;
+      margin-top: 5px;
+  }
+
+  .collection-div #left-side #anchor:hover + #button1-div h4 {
+      margin-top: 5px;
+      margin-left: 10px;
+  }
+
+  /* ----------End of Button1 Hover-------- */
+
+  
+
+
+
+
+  .collection-div #left-side #button2 {
+      position:absolute;
+      left: 41%;
+      top: 31%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  .collection-div #left-side #button2:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 41%;
+      top: 31%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+  }
+
+  /* -----------Button 2 Hover --------*/
+
+  .collection-div #left-side #button2-div {
+      position: absolute;
+      width: 125px;
+      height: 110px;
+      background-color: white;
+      left: 25%;
+      top: 25%;
+      display: none;
+      font-family: sans-serif;
+  }
+  
+
+  .collection-div #left-side #anchor2:hover + #button2-div {
+      display: block;
+      font-size: 13pt;
+      
+  }
+  .collection-div #left-side #anchor2:hover + #button2-div h5 {
+      margin: 5px 10px;
+  }
+  .collection-div #left-side #anchor2:hover + #button2-div h6 {
+      color: red;
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+  }
+  .collection-div #left-side #anchor2:hover + #button2-div p {
+      font-family: sans-serif;
+      margin-left: 10px;
+      font-size: 0.83em;
+      margin-top: 5px;
+  }
+
+  .collection-div #left-side #anchor2:hover + #button2-div h4 {
+      margin-top: 5px;
+      margin-left: 10px;
+  }
+
+  /* ----------End of Button2 Hover-------- */
+
+
+
+  .collection-div #left-side #button3 {
+      position:absolute;
+      left: 27%;
+      top: 90%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  .collection-div #left-side #button3:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 27%;
+      top: 90%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+  }
+
+
+/* -----------Button 3 Hover --------*/
+
+      .collection-div #left-side #button3-div {
+        position: absolute;
+        width: 130px;
+        height: 110px;
+        background-color: white;
+        left: 31%;
+        top: 83%;
+        display: none;
+        font-family: sans-serif;
+      }
+
+
+      .collection-div #left-side #anchor3:hover + #button3-div {
+        display: block;
+        font-size: 13pt;
+        
+      }
+      .collection-div #left-side #anchor3:hover + #button3-div h5 {
+        margin: 5px 10px;
+      }
+      .collection-div #left-side #anchor3:hover + #button3-div h6 {
+        color: red;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+      .collection-div #left-side #anchor3:hover + #button3-div p {
+        font-family: sans-serif;
+        margin-left: 10px;
+        font-size: 0.83em;
+        margin-top: 5px;
+      }
+
+      .collection-div #left-side #anchor3:hover + #button3-div h4 {
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+
+/* ----------End of Button3 Hover-------- */
+
+
+
+  .collection-div #left-side #button4 {
+      position:absolute;
+      left: 35%;
+      top: 72.5%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  .collection-div #left-side #button4:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 35%;
+      top: 72.5%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+  }
+
+  /* -----------Button 4 Hover --------*/
+
+      .collection-div #left-side #button4-div {
+          position: absolute;
+          width: 130px;
+          height: 110px;
+          background-color: white;
+          left: 20%;
+          top: 65%;
+          display: none;
+          font-family: sans-serif;
+      }
+
+
+      .collection-div #left-side #anchor4:hover + #button4-div {
+          display: block;
+          font-size: 13pt;
+          
+      }
+      .collection-div #left-side #anchor4:hover + #button4-div h5 {
+          margin: 5px 10px;
+      }
+      .collection-div #left-side #anchor4:hover + #button4-div h6 {
+          color: red;
+          margin-top: 15px;
+          margin-left: 10px;
+          margin-bottom: 5px;
+      }
+      .collection-div #left-side #anchor4:hover + #button4-div p {
+          font-family: sans-serif;
+          margin-left: 10px;
+          font-size: 0.83em;
+          margin-top: 5px;
+      }
+
+      .collection-div #left-side #anchor4:hover + #button4-div h4 {
+          margin-top: 5px;
+          margin-left: 10px;
+      }
+
+/* ----------End of Button4 Hover-------- */
+
+  .collection-div #left-side #button5 {
+      position:absolute;
+      left: 52.75%;
+      top: 18%;
+      box-shadow: inset 0px 0px 0px 7px rgba(0, 0, 0, 0.404);
+      border: 0px solid rgb(255, 255, 255);
+  }
+
+  .collection-div #left-side #button5:hover {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 52.75%;
+      top: 18%;
+      box-shadow: inset 0px 0px 0px 9px rgba(0, 0, 0, 0.404);
+      border: 1px solid rgb(255, 255, 255);
+      transition: 0.2s ease-in;
+  }
+
+  /* -----------Button 5 Hover --------*/
+
+  .collection-div #left-side #button5-div {
+      position: absolute;
+      width: 120px;
+      height: 110px;
+      background-color: white;
+      left: 57%;
+      top: 12%;
+      display: none;
+      font-family: sans-serif;
+  }
+
+
+  .collection-div #left-side #anchor5:hover + #button5-div {
+      display: block;
+      font-size: 13pt;
+      
+  }
+  .collection-div #left-side #anchor5:hover + #button5-div h5 {
+      margin: 5px 10px;
+  }
+  .collection-div #left-side #anchor5:hover + #button5-div h6 {
+      color: red;
+      margin-top: 15px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+  }
+  .collection-div #left-side #anchor5:hover + #button5-div p {
+      font-family: sans-serif;
+      margin-left: 10px;
+      font-size: 0.83em;
+      margin-top: 5px;
+  }
+
+  .collection-div #left-side #anchor5:hover + #button5-div h4 {
+      margin-top: 5px;
+      margin-left: 10px;
+  }
+
+/* ----------End of Button5 Hover-------- */
+
+
+
+
+
+/* ------Right Side Of The Div------- */
+
+.collection-div #right-side{
+    display: flex;
+    background-color: #c0c1c9;
+    width: 35%;
+    height: 100%;
+    max-height: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: auto;
+    
+}
+
+.collection-div #right-side h1, .collection-div #right-side p, .collection-div #right-side button{
+    margin-top: 20px;
+    color: black;
+}
+.collection-div #right-side h1{
+    font-size: 18pt;
+}
+.collection-div #right-side p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 14pt;
+}
+
+.collection-div #right-side button{
+    width: 15%;
+    height: 5%;
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.collection-div #right-side a{
+
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*End of Div style*/
+
+/* ---------------Products Grid Div--------------*/
+
+.products-grid{
+    width: 100%;
+    /* margin-bottom: 50px; */
+    padding-top: 30px;
+}
+
+#product-grid-title h2{
+  font-size: 22pt;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#content{
+  display: grid;
+  /* grid-template-columns: 33.3% 33.3% 33.3%; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(40, 1fr);
+  grid-auto-rows: minmax(550px, auto);
+  grid-gap: 10px;
+  
+  max-width: 80%;
+  margin: 0 auto;
+}
+#content div{
+  background: #3bbced;
+  padding: 30px;
+}
+#content div:nth-child(even){
+  background: #777;
+}
+#content .one{
+  position: relative;
+  grid-column: 1 / 1;
+  grid-row: 1/9;
+  background-image: url(../images/grid1.png) !important;
+}
+
+#content .one button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .one button a{
+  text-decoration: none;
+  color: black;
+}
+#content .one button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .one button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+
+#content .two{
+  position: relative;
+  grid-column: 2 / 2;
+  grid-row: 1/8;
+  background-image: url(../images/grid2.png) !important;
+}
+#content .two button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .two button a{
+  text-decoration: none;
+  color: black;
+}
+#content .two button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .two button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .three{
+  grid-column: 3 / 3; 
+  position: relative;
+  grid-row: 1/9;
+  background-image: url(../images/grid3.png) !important;
+}
+#content .three button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .three button a{
+  text-decoration: none;
+  color: black;
+}
+#content .three button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .three button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .four{
+  position: relative;
+  grid-column: 1/1;
+  grid-row: 9/17;
+  background-image: url(../images/grid4\ .jpg) !important;
+}
+#content .four button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .four button a{
+  text-decoration: none;
+  color: black;
+}
+#content .four button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .four button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .five{
+  position: relative;
+  grid-column: 2/2;
+  grid-row: 8/16;
+  background-image: url(../images/grid5.png) !important;
+}
+#content .five button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .five button a{
+  text-decoration: none;
+  color: black;
+}
+#content .five button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .five button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .six{
+  position: relative;
+  grid-column: 3/3;
+  grid-row: 9/17;
+  background-image: url(../images/grid6.png) !important;
+
+}
+#content .six button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .six button a{
+  text-decoration: none;
+  color: black;
+}
+#content .six button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .six button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .seven{
+  position: relative;
+  grid-column: 1 / 1;
+  grid-row: 17/25;
+  background-image: url(../images/grid7.png) !important;
+
+}
+#content .seven button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .seven button a{
+  text-decoration: none;
+  color: black;
+}
+#content .seven button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .seven button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .eight{
+  position: relative;
+  grid-column: 2/2;
+  grid-row: 16/24;
+  background-image: url(../images/grid8.png) !important;
+
+}
+#content .eight button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .eight button a{
+  text-decoration: none;
+  color: black;
+}
+#content .eight button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .eight button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .nine{
+  position: relative;
+  grid-column: 3/3;
+  grid-row: 17/25;
+  background-image: url(../images/grid9.png) !important;
+
+}
+#content .nine button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .nine button a{
+  text-decoration: none;
+  color: black;
+}
+#content .nine button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .nine button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .ten{
+  position: relative;
+  grid-column: 1 / 1;
+  grid-row: 25/33;
+  background-image: url(../images/grid10.png) !important;
+
+}
+#content .ten button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .ten button a{
+  text-decoration: none;
+  color: black;
+}
+#content .ten button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .ten button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .eleven{
+  position: relative;
+  grid-column: 2/2;
+  grid-row: 24/32;
+  background-image: url(../images/grid11.png) !important;
+
+}
+#content .eleven button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .eleven button a{
+  text-decoration: none;
+  color: black;
+}
+#content .eleven button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .eleven button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .twelve{
+  position: relative;
+  grid-column: 3/3;
+  grid-row: 25/33;
+  background-image: url(../images/grid12.png) !important;
+
+}
+#content .twelve button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .twelve button a{
+  text-decoration: none;
+  color: black;
+}
+#content .twelve button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .twelve button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .thirteen{
+  position: relative;
+  grid-column: 1 / 1;
+  grid-row: 33/41;
+  background-image: url(../images/grid13.png) !important;
+
+}
+#content .thirteen button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .thirteen button a{
+  text-decoration: none;
+  color: black;
+}
+#content .thirteen button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .thirteen button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .fourteen{
+  position: relative;
+  grid-column: 2/2;
+  grid-row: 32/40;
+  background-image: url(../images/grid14.png) !important;
+
+}
+#content .fourteen button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .fourteen button a{
+  text-decoration: none;
+  color: black;
+}
+#content .fourteen button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .fourteen button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .fifteen{
+  position: relative;
+  grid-column: 3/3;
+  grid-row: 33/41;
+  background-image: url(../images/grid15.png) !important;
+
+}
+#content .fifteen button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content .fifteen button a{
+  text-decoration: none;
+  color: black;
+}
+#content .fifteen button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content .fifteen button:hover{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#content .sixteen{opacity: 0;}
+
+
+
+/*-----------------End of Products Grid Div------------------*/
+
+#show-hide-button{
+  margin-left: 47%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 130px;
+  height: 35px;
+  border: 0px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+/* ----------Second Product Grid ------------- */
+
+#products-grid-2{
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: -56px;
+  display: none;
+  /* padding-top: 30px; */
+}
+
+/* #product-grid-title h2{
+font-size: 22pt;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 40px;
+} */
+
+#content2{
+display: grid;
+/* grid-template-columns: 33.3% 33.3% 33.3%; */
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(40, 1fr);
+grid-auto-rows: minmax(550px, auto);
+grid-gap: 10px;
+
+max-width: 80%;
+margin: 0 auto;
+}
+#content2 div{
+background: #3bbced;
+padding: 30px;
+}
+#content2 div:nth-child(even){
+background: #777;
+}
+#content2 .one{
+position: relative;
+grid-column: 1 / 1;
+grid-row: 2/9;
+background-image: url(../images/grid10a.png) !important;
+
+}
+
+#content2 .one button,
+#content2 .two button,
+#content2 .three button,
+#content2 .four button,
+#content2 .five button,
+#content2 .six button,
+#content2 .seven button,
+#content2 .eight button,
+#content2 .nine button,
+#content2 .ten button,
+#content2 .eleven button,
+#content2 .twelve button,
+#content2 .thirteen button,
+#content2 .fourteen button,
+#content2 .fifteen button{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#c0c1c9;
+}
+#content2 .one button a,
+#content2 .two button a,
+#content2 .three button a,
+#content2 .four button a,
+#content2 .five button a,
+#content2 .six button a,
+#content2 .seven button a,
+#content2 .eight button a,
+#content2 .nine button a,
+#content2 .ten button a,
+#content2 .eleven button a,
+#content2 .twelve button a,
+#content2 .thirteen button a,
+#content2 .fourteen button a,
+#content2 .fifteen button a
+{
+  text-decoration: none;
+  color: black;
+}
+#content2 .one button a:hover,
+#content2 .two button a:hover,
+#content2 .three button a:hover,
+#content2 .four button a:hover,
+#content2 .five button a:hover,
+#content2 .six button a:hover,
+#content2 .seven button a:hover,
+#content2 .eight button a:hover,
+#content2 .nine button a:hover,
+#content2 .ten button a:hover,
+#content2 .eleven button a:hover,
+#content2 .twelve button a:hover,
+#content2 .thirteen button a:hover,
+#content2 .fourteen button a:hover,
+#content2 .fifteen button a:hover
+{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+#content2 .one button:hover,
+#content2 .two button:hover,
+#content2 .three button:hover,
+#content2 .four button:hover,
+#content2 .five button:hover,
+#content2 .six button:hover,
+#content2 .eight button:hover,
+#content2 .nine button:hover,
+#content2 .ten button:hover,
+#content2 .eleven button:hover,
+#content2 .twelve button:hover,
+#content2 .thirteen button:hover,
+#content2 .fourteen button:hover,
+#content2 .fifteen button:hover
+{
+  position: absolute;
+  left: 45%;
+  bottom: 4%;
+  width: 75px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+#content2 .two{
+position: relative;
+grid-column: 2 / 2;
+grid-row: 1/8;
+background-image: url(../images/grid2a.png) !important;
+}
+#content2 .three{
+position: relative;
+grid-column: 3 / 3; 
+grid-row: 2/9;
+background-image: url(../images/grid3a.png) !important;
+}
+#content2 .four{
+position: relative;
+grid-column: 1/1;
+grid-row: 9/17;
+background-image: url(../images/grid4a.png) !important;
+}
+#content2 .five{
+position: relative;
+grid-column: 2/2;
+grid-row: 8/16;
+background-image: url(../images/grid5a.png) !important;
+}
+#content2 .six{
+position: relative;
+grid-column: 3/3;
+grid-row: 9/17;
+background-image: url(../images/grid6a.png) !important;
+
+}
+#content2 .seven{
+position: relative;
+grid-column: 1 / 1;
+grid-row: 17/25;
+background-image: url(../images/grid7a.png) !important;
+
+}
+#content2 .eight{
+position: relative;
+grid-column: 2/2;
+grid-row: 16/24;
+background-image: url(../images/grid8a.png) !important;
+
+}
+#content2 .nine{
+position: relative;
+grid-column: 3/3;
+grid-row: 17/25;
+background-image: url(../images/grid9a.png) !important;
+
+}
+#content2 .ten{
+position: relative;
+grid-column: 1 / 1;
+grid-row: 25/33;
+background-image: url(../images/grid10a.png) !important;
+
+}
+#content2 .eleven{
+position: relative;
+grid-column: 2/2;
+grid-row: 24/32;
+background-image: url(../images/grid11a.png) !important;
+
+}
+#content2 .twelve{
+position: relative;
+grid-column: 3/3;
+grid-row: 25/33;
+background-image: url(../images/grid12a.png) !important;
+
+}
+#content2 .thirteen{
+position: relative;
+grid-column: 1 / 1;
+grid-row: 33/41;
+background-image: url(../images/grid13a.png) !important;
+
+}
+#content2 .fourteen{
+position: relative;
+grid-column: 2/2;
+grid-row: 32/40;
+background-image: url(../images/grid14a.png) !important;
+
+}
+#content2 .fifteen{
+position: relative;
+grid-column: 3/3;
+grid-row: 33/41;
+background-image: url(../images/grid15a.png) !important;
+
+}
+#content2 .sixteen{opacity: 0;}
+
+/* ------------- End Second Grid Photo -----------  */
+
+
+/* -------------- Div with rooms preview ----------- */
+.rooms-div{
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  padding-top: 20px;
+}
+.rooms-div h2{
+  font-size: 17pt;
+  margin-left: 5%;
+}
+
+.rooms-div #rooms-div-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.rooms-div #rooms-div-container div{
+  width: 260px;
+  height: 350px;
+  background-color: #E41936;
+}
+
+/* Div one */
+
+.rooms-div #rooms-div-container #one{
+  position: relative;
+  background-image: url(../images/rooms-living-room.png);
+}
+.rooms-div #one button,
+.rooms-div #two button,
+.rooms-div #three button,
+.rooms-div #four button,
+.rooms-div #five button,
+.rooms-div #six button{
+  position: absolute;
+  left: 38%;
+  bottom: 4%;
+  width: 88px;
+  height: 25px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: white;
+}
+.rooms-div #one button a,
+.rooms-div #two button a,
+.rooms-div #three button a,
+.rooms-div #four button a,
+.rooms-div #five button a,
+.rooms-div #six button a{
+  text-decoration: none;
+  color: black;
+}
+.rooms-div #one button a:hover,
+.rooms-div #two button a:hover,
+.rooms-div #three button a:hover,
+.rooms-div #four button a:hover,
+.rooms-div #five button a:hover,
+.rooms-div #six button a:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+
+}
+.rooms-div #one button:hover,
+.rooms-div #two button:hover,
+.rooms-div #three button:hover,
+.rooms-div #four button:hover,
+.rooms-div #five button:hover,
+.rooms-div #six button:hover{
+  position: absolute;
+  left: 38%;
+  bottom: 4%;
+  width: 90px;
+  height: 30px;
+  border: 0px;
+  border-radius: 10px;
+  background-color:#121213;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+/* Div Two */
+.rooms-div #rooms-div-container #two{
+  position: relative;
+  background-image: url(../images/rooms-bedroom.png);
+}
+.rooms-div #rooms-div-container #three{
+  position: relative;
+  background-image: url(../images/rooms-kitchen.png);
+}
+.rooms-div #rooms-div-container #four{
+  position: relative;
+  background-image: url(../images/rooms-bathroom.jpg);
+}
+.rooms-div #rooms-div-container #five{
+  position: relative;
+  background-image: url(../images/rooms-dining\ room.png);
+}
+.rooms-div #rooms-div-container #six{
+  position: relative;
+  background-image: url(../images/rooms-lightning.png);
+}
 
 /* ------------------------ Footer Start ------------------ */
 footer{
@@ -81,6 +1716,7 @@ footer{
     padding-top: 30px;
     color: white;
     margin-top: auto;
+    font-size: 13pt;
 }
 .footer-logo-container img{
     margin-top: 5px;
@@ -123,3 +1759,167 @@ footer{
     color: gray;
 }
 /* ------------------------ Footer ending ------------------ */
+
+@media (max-width: 850px){
+    
+  #navbar {
+  width: 850px;
+  height: 100px;
+  
+  }
+  #navbar ul li a{
+      font-size: 12pt;
+
+  }
+  #l-nav{
+      width: 55%;
+
+  }
+  #l-nav  li{
+      padding-left: 5px;
+  }
+  #r-nav{
+      margin-right: 40px;
+  }
+
+  /* ------------------------------------------ */
+  
+  #newProducts-slider{
+    width: 850px;
+  }
+
+  /* ----------------- */
+
+  .collection{
+    width: 850px;
+  }
+  .collection-div{
+    flex-direction: column;
+    height: 850px;
+  }
+  .collection-div #left-side{
+    width: 100%;
+    height: 800px;
+  }
+
+  .collection-div #right-side{
+    width: 100%;
+    height: 350px;
+  }
+
+  .collection-div #right-side button {
+    width: 80px;
+    height: 35px;
+  }
+/* ----------------------------------- */
+
+ 
+
+  .products-grid #content div button, #products-grid-2 #content2 div button{
+    left: 33%;
+  }
+
+ 
+
+  /* ------------------------- */
+
+  .rooms-div{
+    max-width: 850px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .rooms-div #rooms-div-container{
+    width: 90%;
+  }
+
+  .rooms-div #rooms-div-container{
+    flex-wrap: wrap;
+  }
+
+  .rooms-div #rooms-div-container div  {
+    width: 220px;
+    margin-top: 20px;
+  }
+
+  .rooms-div #rooms-div-container div a button {
+    left: 30%;
+  }
+  /* ----------------- */
+
+  footer {
+      max-width: 850px;
+  }
+
+}
+
+
+@media (max-width: 500px){
+    
+
+  #navbar {
+  width: 500px;
+  height: 80px;
+  }
+  
+  #l-nav li a img{
+      margin-top: 5px;
+      width: 60px;
+      height: 60px;
+  }
+
+  #navbar ul li a{
+      font-size: 10pt;
+
+  }
+  #l-nav{
+      width: 400px ;
+      margin-left: 0px;
+
+  }
+  #l-nav  li, #r-nav li{
+      padding-left: 5px;
+  }
+  #r-nav {
+      width: 100px;
+      margin-right: 5px;
+  }
+  
+  /* ------------------------------------------ */
+  #newProducts-slider{
+    width: 500px;
+  }
+
+  .hero-left .layers .layer:nth-child(1) > span {
+    font-size: 19pt;
+  }
+
+  .hero-left .layers .layer__info {
+    padding-left: 10px;
+}
+
+/* ------------------------------ */
+
+  .collection{
+    max-width: 500px;
+    height: 750px;
+  }
+
+  .collection-div {
+    margin-top: 0px;
+  }
+
+  .collection .collection-div #left-side{
+    height: 400px;
+  }
+
+  #show-hide-button {
+    margin-left: 37%;
+}
+  /* ------------------------- */
+
+  footer {
+      max-width: 500px
+
+}
+
+}

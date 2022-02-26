@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | Homegoods</title>
-    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/rooms.css">
     <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
 
    
