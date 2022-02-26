@@ -12,12 +12,12 @@ class LoginVerify {
     public function verifyData(){
         if($this->emptyInputs($this->email, $this->password)){
             $_SESSION['login-register-error'] = true;
-            header("Location: ../views/llogaria.php?login=emptyfields");
+            header("Location: ../views/login.php?login=emptyfields");
         } else if ($this->correctLoginData($this->email, $this->password)){
             header("Location: ../views/index.php?login=success");
         } else{
             $_SESSION['login-register-error'] = true;
-            header("Location: ../views/llogaria.php?login=error");
+            header("Location: ../views/login.php?login=error");
         }
     }
 
@@ -65,11 +65,11 @@ class RegisterVerify{
         //check if inputs are empty
         if($this->emptyInputs($this->firstname, $this->lastname, $this->email, $this->password)){
             $_SESSION['login-register-error'] = true;
-            header("Location: ../views/llogaria.php?register=emptyfields");
+            header("Location: ../views/login.php?register=emptyfields");
         } // check if all data input is correct based on methods verify data, filter_var, emailExists and validPassword
         else if($this->verifyData() == false){
             $_SESSION['login-register-error'] = true;
-            header("Location: ../views/llogaria.php?register=error");
+            header("Location: ../views/login.php?register=error");
         } // if all verification is correct proceed to register user
         else {
             $user = new User($this->firstname, $this->lastname, $this->email, $this->password, 0);

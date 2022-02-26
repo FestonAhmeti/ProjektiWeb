@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
 <div id="navbar">
         
         <ul id="l-nav">
@@ -9,7 +15,7 @@
             <li><a href="sale.php">SALE!</a></li>
         </ul>
         <ul id="r-nav">
-            <li><a href="../login/login.html">Login</a></li>
+            <li><a href="../views/login.php">Login</a></li>
             <li><a href="#"><img src="../images/cart-icon.jpg" alt="Cart"></a></li>
         </ul>
 

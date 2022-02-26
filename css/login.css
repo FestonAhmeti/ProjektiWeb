@@ -1,0 +1,99 @@
+
+/*Login Content*/
+
+.llogaria-main {
+    min-height: 80vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-image: url(../images/bw1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.form-style {
+    background-color: rgb(218, 218, 218) !important;
+    width: 350px !important;
+    border-radius: 3px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 20px 15px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 255, 0.1) !important;
+    color: black !important;
+}
+#login-email, #login-pw{
+    color: black !important;
+}
+.form-style h2{
+    margin-bottom: 10px !important;
+}
+
+.form-style label {
+    font-size: 10pt !important;
+    margin-top: 10px !important;
+}
+
+.form-style input[type=text], input[type=email], input[type=password]{
+    height: 25px !important;
+    border: 1px solid #a0a0a0  !important;
+    background-color: white;
+    border-radius: 2px !important;
+    margin-top: 5px !important;
+    padding-left: 5px !important;
+}
+.divider {
+    width: 100px;
+    height: 3px;
+    background-color: #00A0FF;
+    border: 0;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.form-style input[type=text]:hover, input[type=email]:hover, input[type=password]:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 255, 0.1) !important;
+}
+
+.form-style input:focus{
+    outline: none !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 255, 0.1) !important;
+}
+
+.form-style input[type=submit]{
+    margin: 15px 0 !important;
+    border: none !important;
+    padding: 5px 0 !important;
+    cursor: pointer!important;
+}
+
+.form-style p{
+    font-size: 10pt !important;
+}
+
+.form-style p a{
+    font-size: 9pt !important;
+    color: #0081CC !important;
+}
+
+.form-style p a:hover {
+    border-bottom: 1px solid #0081CC !important;
+    cursor: pointer !important;
+}
+
+.hidden {
+    display: none !important;
+}
+#login-submit-btn, #register-submit-btn{
+    background-color: #0081CC !important;
+}
+.llogaria-error p{
+    color: #D8000C !important;
+    background-color: #FFD2D2 !important;
+    width: 250px !important;
+    font-size: 10pt !important;
+    border-radius: 3px !important;
+    padding: 20px 15px !important;
+    margin-bottom: 20px !important;
+}

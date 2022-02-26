@@ -1,16 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/products.css">
-</head>
-<body>
+
     <?php 
         include '../components/header.php';
+        include_once '../programLogic/ProductMapper.php';
+        include_once '../programLogic/Product.php';
+        include_once '../programLogic/Cart.php';
+        include_once '../programLogic/CartMapper.php';
+        include_once '../programLogic/UserMapper.php';
+
+        $umapper = new UserMapper();
+        $mapper = new ProductMapper();
+        $cmapper = new CartMapper();
+
+        $products = $mapper->getAllProducts();
+        if(isset($_GET['filter']) && $_GET['filter'] == 'price-low-to-high'){
+            $products = $mapper->getPriceLowToHigh();
+        } else if (isset($_GET['filter']) && $_GET['filter'] == 'price-high-to-low'){
+            $products = $mapper->getPriceHighToLow();
+        } else if (isset($_GET['filter']) && $_GET['filter'] == 'name-A-Z'){
+            $products = $mapper->getNameAtoZ();
+        } else if (isset($_GET['filter']) && $_GET['filter'] == 'name-Z-A'){
+            $products = $mapper->getNameZtoA();
+        } else if (isset($_GET['filter']) && $_GET['filter'] == 'newest'){
+            $products = $mapper->getNewest();
+        } else if (isset($_GET['filter']) && $_GET['filter'] == 'oldest'){
+            $products = $mapper->getOldest();
+        } else if (isset($_GET['filter']) && $_GET['filter'] == 'all'){
+            $products = $mapper->getAllProducts();
+        } else {
+            $products = $mapper->getAllProducts();
+        }
     ?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="../css/products.css">
+        
+    </head>
+    <body>
     <div id="main">
         
         <ul id="nav-rooms">
@@ -40,21 +66,21 @@
 
         <div class="products-container">
         <div class="products-panel wrapper">
-                <?php //foreach($products as $product){ 
-                    //$pid = $product['id'];
+                <?php foreach($products as $product){ 
+                    $pid = $product['id'];
                 ?>
                 <input class="hidden" type="text" name="product_id" value=<?php $pid; ?>> 
                     <div class="square">
                         <div>
-                            <a href="<?php //echo "view-product.php?pid=$pid" ?>"><img src=<?php echo $product['image']; ?> alt=""></a>
+                            <a href="<?php echo "view-product.php?pid=$pid" ?>"><img src=<?php echo $product['image']; ?> alt=""></a>
                         </div>
                         <div>
-                            <h3><?php //echo $product['emri']; ?></h3>
-                            <h2><?php //echo $product['cmimi']; ?>&euro;</h2>
-                            <a class="button" href="<?php //echo "view-product.php?pid=$pid" ?>">Shiko Produktin</a>
+                            <h3><?php echo $product['emri']; ?></h3>
+                            <h2><?php echo $product['cmimi']; ?>&euro;</h2>
+                            <a class="button" href="<?php echo "view-product.php?pid=$pid" ?>">Shiko Produktin</a>
                         </div>
                     </div>
-                <?php //} ?>
+                <?php } ?>
             </div>
         </div>
 
@@ -62,5 +88,3 @@
     <?php 
         include '../components/footer.php';
     ?>
-</body>
-</html>

@@ -92,13 +92,13 @@ else if(isset($_GET['action']) && $_GET['action'] == 'add-to-cart'){
         $cartmapper = new CartMapper();
         $user = $usermapper->getUserByEmail($_SESSION['email']);
         $cartmapper->insertToCart($user['id'], $_GET['product-id']);
-        header("Location: ../views/shporta.php");
+        header("Location: ../views/cart.php");
     }
 } else if(isset($_POST['change-reth-nesh'])){
     $newText = $_POST['text'];
     $msgmapper = new MessageMapper();
     $msgmapper->updateText($_POST['id'], $newText);
-    header("Location: ../views/rrethnesh.php");
+    header("Location: ../views/aboutUs.php");
 }
 //perndryshe dergo ne index.php
 else {

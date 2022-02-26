@@ -2,7 +2,7 @@
 include_once 'Admin.php';
 include_once 'User.php';
 require_once 'UserMapper.php';
-require_once 'Authenticate.php';
+require_once 'Authentication.php';
 session_start();
 
 if(isset($_POST['login'])){

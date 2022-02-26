@@ -91,6 +91,10 @@
                 </div>
             </div>
             </div>
+            
+            <?php if(isset($_GET['messagesend']) && $_GET['messagesend'] == 'success'){
+                echo '<script>alert("Mesazhi juaj u dergua me sukses")</script>';
+            } ?>
             <!-- Footer -->
 
             <?php 

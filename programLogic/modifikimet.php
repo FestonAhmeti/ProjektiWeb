@@ -139,7 +139,7 @@ if(!empty($_SESSION['is_logged_in']) && isset($_SESSION['is_logged_in']) && $_SE
         if(isset($_GET['product-id'])){
             $cartmapper = new CartMapper();
             $cartmapper->deleteProductFromCart($_GET['product-id']);
-            header("Location: ../views/shporta.php");
+            header("Location: ../views/cart.php");
         }
     }
     else if(isset($_GET['action']) && $_GET['action'] == "delete-category"){
@@ -155,7 +155,7 @@ else if(isset($_GET['action']) && $_GET['action'] == "remove-from-cart"){
     if(isset($_GET['product-id'])){
         $cartmapper = new CartMapper();
         $cartmapper->deleteProductFromCart($_GET['product-id']);
-        header("Location: ../views/shporta.php");
+        header("Location: ../views/cart.php");
     }
 }
 // perndryshe nese nuk eshte logged in dhe admin, atehere dergo ne index

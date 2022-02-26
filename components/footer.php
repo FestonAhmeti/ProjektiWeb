@@ -16,6 +16,13 @@
             <p>Copyright &copy; 2021 HomeGoods </p>
             </div>
         </footer>
-        
+    <script src="../script/login.js"></script>
+    <script src="../script/carousel.js"></script>
+    <script src="../script/contact-us.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="../script/products.js"></script>
+    <script src="../script/totop.js"></script>
+    <script src="../script/stats.js"></script>
+
     </body>
 </html>

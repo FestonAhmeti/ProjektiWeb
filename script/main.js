@@ -24,3 +24,5 @@ document.body.addEventListener('load' , ndrroImg());
 
 //Kodi per carousel sliderin e 2te
 
+
+

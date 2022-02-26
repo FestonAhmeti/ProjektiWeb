@@ -3,7 +3,7 @@
 class DatabaseConfig {
     private $connection;
     private $host = "localhost";
-    private $dbname = "quantum";
+    private $dbname = "homegoods";
 
     protected function getConnection(){
         $this->createConnection();
