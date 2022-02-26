@@ -23,6 +23,21 @@
 
         </ul>
 
+        <div id="product-filter">
+            <form method="GET" action="<?= $_SERVER['PHP_SELF']?>">
+                <select name="filter">
+                    <option value="all">Të gjitha</option>
+                    <option value="price-low-to-high">Cmimi: poshtë-lart</option>
+                    <option value="price-high-to-low">Cmimi: lart-poshtë</option>
+                    <option value="name-A-Z">Emri: A-Z</option>
+                    <option value="name-Z-A">Emri: Z-A</option>
+                    <option value="newest">Më të fundit</option>
+                    <option value="oldest">Më të vjetrat</option>
+                </select>
+                <input type="submit" value="Filtro">
+            </form>
+        </div>
+
         <div class="products-container">
         <div class="products-panel wrapper">
                 <?php //foreach($products as $product){ 
