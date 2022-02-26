@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
 <div id="navbar">

@@ -1,7 +1,13 @@
 <?php
     include_once '../components/header.php';
 ?>
-
+<!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="../css/login.css">
+        
+    </head>
+    <body>
 <?php if(isset($_SESSION['is_logged_in'])) {?>
         <h1 style="margin: 250px 0 250px 0;">You are already logged in</h1>
 <?php } else { ?>
