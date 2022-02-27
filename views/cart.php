@@ -26,6 +26,13 @@ if(!empty($_SESSION['is_logged_in']) && isset($_SESSION['is_logged_in'])
 
             $totali = 0; 
 ?>
+<!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="../css/cart.css">
+        
+    </head>
+    <body>
     <main id="main">
         <div class="cart">
             <div class="db-container">
@@ -49,7 +56,7 @@ if(!empty($_SESSION['is_logged_in']) && isset($_SESSION['is_logged_in'])
                                         <?php echo $produkt[$i]['cmimi'];?> &euro;
                                     </td>
                                     <td>
-                                        <a href="<?php echo "../programLogic/modifications.php?action=remove-from-cart&product-id=".$produkt[$i]['id']; ?>">Largo nga shporta</a>
+                                        <a href="<?php echo "../programLogic/modifikimet.php?action=remove-from-cart&product-id=".$produkt[$i]['id']; ?>">Largo nga shporta</a>
                                     </td>
                                 </tr>
                             <?php }

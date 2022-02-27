@@ -38,6 +38,13 @@ if(!empty($_SESSION['is_logged_in']) && isset($_SESSION['is_logged_in'])
         }
     }
 ?>  
+<!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="../css/dashboard.css">
+        
+    </head>
+    <body>
     <div class="edit-user-main">
         <?php if(count($errors)) {?>
             <div class="llogaria-error" style="width: 430px;">
@@ -53,8 +60,8 @@ if(!empty($_SESSION['is_logged_in']) && isset($_SESSION['is_logged_in'])
             <input type="text" name="lastname" value="<?= $user['last_name'] ?>">
             <input type="email" name="email" value="<?= $user['email'] ?>">
             <input type="password" name="pw" value="<?= $user['password'] ?>">
-            <input class="button" type="submit" name="update-user-btn" value="Ruaj ndryshimet">
-            <a href="dashboard.php?action=view-users">Anulo</a>
+            <input class="button" type="submit" name="update-user-btn" value="Save Changes">
+            <a href="dashboard.php?action=view-users">Cancel</a>
         </form>
     </div>
 

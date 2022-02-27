@@ -1,0 +1,55 @@
+
+.view-message-main{
+    display: flex;
+    flex-direction: column;
+    min-height:50vh;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: start;
+}
+
+.message-card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    background-color: rgb(63, 63, 63);
+    border: 0.1px solid lightgrey;
+    width: 60%;
+    align-items: start;
+    padding: 30px 30px;
+    color: whitesmoke;
+}
+
+.message-card img {
+    max-height: 50px;
+    margin-bottom: 15px;
+}
+
+.message-card p, .message-card textarea {
+    margin: 8px 0;
+}
+
+.message-card textarea{
+    border: 0.1px solid lightgrey;
+    color: white;
+    resize: none;
+    padding: 10px;
+    width: 100%;
+    align-self: center;
+    min-height: 400px;
+    font-size: 12pt;
+}
+
+.message-card p:nth-child(4) a{
+    padding: 5px 5px 5px 5px;
+    background-color: rgba(182, 180, 177, 0.63);
+    margin-top: 20px;
+    font-size: 15pt;
+    color: white;
+    text-decoration: none;
+    border: 0.1px solid white;
+}
+
+.message-card p:nth-child(4) a:hover{
+    color: whitesmoke;
+}

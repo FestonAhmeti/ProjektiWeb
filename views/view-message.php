@@ -8,10 +8,16 @@
             $mapper = new MessageMapper();
             $msg = $mapper->getMessageById($_GET['msg_id']);
 ?>  
+<!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="../css/view-message.css">
+        
+    </head>
+    <body>
     <div class="view-message-main">
         <div class="message-card">
-            <img src="../images/icons/envelope-regular.svg" alt="">
-            <p><b>Mesazh nga:</b> <?= $msg['emri'].' '.$msg['mbiemri']?></p>
+            <p><b>Message from:</b> <?= $msg['emri'].' '.$msg['mbiemri']?></p>
             <p><b>Email: </b><?= $msg['email']?></p>
             <textarea disabled><?= $msg['msg']?></textarea>
             <p><a href="

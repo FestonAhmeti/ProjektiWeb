@@ -25,6 +25,13 @@
             header("Location: dashboard.php?action=view-products");
         }
 ?>  
+<!DOCTYPE html>
+    <html>
+    <head>
+    <link rel="stylesheet" href="../css/dashboard.css">
+        
+    </head>
+    <body>
     <div class="edit-product-main">
         <img src="<?= $product['image']?>">
         <form method="POST" action="<?= $_SERVER['PHP_SELF'] ?>" class="edit-product-card">
@@ -39,8 +46,8 @@
                     <option value="<?= $category['emri']?>"><?= $category['emri']?></option>
                 <?php endforeach; ?>
             </select>
-            <input class="button" type="submit" name="update-product-btn" value="Ruaj ndryshimet">
-            <a href="dashboard.php?action=view-products">Anulo</a>
+            <input class="button" type="submit" name="update-product-btn" value="Save Changes">
+            <a href="dashboard.php?action=view-products">Cancel</a>
         </form>
     </div>
 <?php } else {

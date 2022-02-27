@@ -211,22 +211,22 @@ class ProductMapper extends DatabaseConfig {
         $statement->execute();
     }
 
-    public function getSliderImages(){
-        $this->query = "select * from slider";
-        $statement = $this->connection->prepare($this->query);
-        $statement->execute();
-        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
-    }
+    // public function getSliderImages(){
+    //     $this->query = "select * from slider";
+    //     $statement = $this->connection->prepare($this->query);
+    //     $statement->execute();
+    //     $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    //     return $result;
+    // }
 
-    public function getSliderImage($id){
-        $this->query = "select * from slider where id=:id";
-        $statement = $this->connection->prepare($this->query);
-        $statement->bindParam(":id", $id);
-        $statement->execute();
-        $result = $statement->fetch(PDO::FETCH_ASSOC);
-        return $result;
-    }
+    // public function getSliderImage($id){
+    //     $this->query = "select * from slider where id=:id";
+    //     $statement = $this->connection->prepare($this->query);
+    //     $statement->bindParam(":id", $id);
+    //     $statement->execute();
+    //     $result = $statement->fetch(PDO::FETCH_ASSOC);
+    //     return $result;
+    // }
 
     public function insertIntoBrands($image){
         $this->query = "insert into brands (image) values (:image)";
@@ -242,13 +242,13 @@ class ProductMapper extends DatabaseConfig {
         $statement->execute();
     }
 
-    public function getBrandImages(){
-        $this->query = "select * from brands";
-        $statement = $this->connection->prepare($this->query);
-        $statement->execute();
-        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
-    }
+    // public function getBrandImages(){
+    //     $this->query = "select * from brands";
+    //     $statement = $this->connection->prepare($this->query);
+    //     $statement->execute();
+    //     $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+    //     return $result;
+    // }
 
     public function getBrandImage($id){
         $this->query = "select * from brands where id=:id";
