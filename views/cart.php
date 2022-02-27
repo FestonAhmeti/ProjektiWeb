@@ -41,7 +41,7 @@ if(!empty($_SESSION['is_logged_in']) && isset($_SESSION['is_logged_in'])
                         <tr>
                             <th>Produkti</th>
                             <th>Cmimi</th>
-                            <th>Opsionet</th>
+                            <th>Opsionet</th> 
                         </tr>
                     </thead>
                         <tbody>
