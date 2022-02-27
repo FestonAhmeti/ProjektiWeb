@@ -19,10 +19,10 @@ inputs.forEach((input) => {
 
 /**--------Validation of Form -----------*/
 function validate(){
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var message = document.getElementById("message").value;
+    var name = document.getElementById("emriPlote").value;
+    var lastname = document.getElementById("mbiemri").value;
+    var email = document.getElementById("emaili").value;
+    var message = document.getElementById("mesazhi").value;
     var error_message = document.getElementById("error_message");
     var error_message1 = document.getElementById("error_message1");
     var error_message2 = document.getElementById("error_message2");
@@ -32,34 +32,35 @@ function validate(){
     
     var text;
     if(name.length < 5){
-      text = "Please Enter valid Username";
+      text = "Please Enter valid Name";
       error_message.innerHTML = text;
       error_message.style.display = 'block';
       return false;
     }else{
       error_message.style.display = 'none'; 
     }
+     if(lastname < 5){
+      text = "Please Enter valid Lastname";
+      error_message1.innerHTML = text;
+    error_message1.style.display = 'block';
+      return false;
+    }
+    else{
+      error_message2.style.display = 'none'; 
+    }
     
     if(email.indexOf("@") == -1 || email.length < 6){
       text = "Please Enter valid Email";
-      error_message1.innerHTML = text;
-      error_message1.style.display = 'block';
+      error_message2.innerHTML = text;
+      error_message2.style.display = 'block';
       return false;
     }
     else{
         error_message1.style.display = 'none'; 
       }
-    if(isNaN(phone) || phone.length < 10){
-        text = "Please Enter valid Phone Number";
-        error_message2.innerHTML = text;
-      error_message2.style.display = 'block';
-        return false;
-      }
-      else{
-        error_message2.style.display = 'none'; 
-      }
-    if(message.length <= 100){
-      text = "Please Enter More Than 100 Characters";
+   
+    if(message.length <= 50){
+      text = "Please Enter More Than 50 Characters";
       error_message3.innerHTML = text;
       error_message3.style.display = 'block';
       return false;

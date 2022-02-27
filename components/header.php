@@ -19,7 +19,7 @@
             <li class="<?php if($page == 'products.php'){ echo ' active';}?>"><a href="products.php">Products</a></li>
             <li class="<?php if($page == 'rooms.php'){ echo ' active';}?>"><a href="rooms.php">Rooms</a></li>
             <li class="<?php if($page == 'contact-us.php'){ echo ' active';}?>"><a href="contact-us.php">Contact Us</a></li>
-            <li class="<?php if($page == 'sale.php'){ echo ' active';}?>"><a href="sale.php">SALE!</a></li>
+            <li class="<?php if($page == 'about-us.php'){ echo ' active';}?>"><a href="about-us.php">About Us</a></li>
         </ul>
         <ul id="r-nav">
         <?php if(isset($_SESSION['is_logged_in']) && $_SESSION['role'] == 1 ){ ?>
@@ -31,7 +31,7 @@
                 <li><a href="logout.php">Log Out</a></li>
         <?php } else {?>       
             <li class="<?php if($page == 'login.php'){ echo ' active';}?>">
-                            <a href="login.php" class="button">
+                            <a href="login.php" class="button1">
                                Log In
                             </a>
                             </li>

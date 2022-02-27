@@ -43,28 +43,28 @@
         <div id="products">
             <div  id="product1">
                 <div class="prods">
-                    <a href="#" ><h3>LANDSKRONA</h3></a>
+                    <a href="products.php" ><h3>LANDSKRONA</h3></a>
                     <p>Sofa</p>
                     <h4>Only $100</h4>
                 </div>
             </div>
             <div  id="product2">
                 <div class="prods">
-                    <a href="#" ><h3>VIMLE</h3></a>
+                    <a href="products.php" ><h3>VIMLE</h3></a>
                     <p>Armchair</p>
                     <h4>Only $110</h4>
                 </div>
             </div>
             <div  id="product3">
                 <div class="prods">
-                    <a href="#"><h3>EKERÖ</h3></a>
+                    <a href="products.php"><h3>EKERÖ</h3></a>
                     <p>Armchair</p>
                     <h4>Only $90</h4>
                 </div>
             </div>
             <div  id="product4">
                 <div class="prods">
-                    <a href="#"><h3>BRIMNES</h3></a>
+                    <a href="products.php"><h3>BRIMNES</h3></a>
                     <p>TV Comb</p>
                     <h4>Only $100</h4>
                 </div>
@@ -87,7 +87,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>128.95$</b><br>Pair of stools</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             BRIMNES
                         </a>
                     </div>
@@ -102,7 +102,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>1300$</b><br>Luxury sofa</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             MORABO
                         </a>
                     </div>
@@ -117,7 +117,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>400$</b><br>Table for 4 people</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             HÄRLANDA
                         </a>
                     </div>
@@ -132,7 +132,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>700$</b><br>Elevated bed with cabinnet by its side</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             UPPLAND
                         </a>
                     </div>
@@ -147,7 +147,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>600$</b><br>Kitchen table</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             GLOSTAD
                         </a>
                     </div>
@@ -162,7 +162,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>570$</b><br>Included decorative stools</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             PÄRUP
                         </a>
                     </div>
@@ -177,7 +177,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>500$</b><br>Beige sofa,stool icluded</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             FINNALA
                         </a>
                     </div>
@@ -192,7 +192,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>900$</b><br>Luxury bed with bedside cabinnet included</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             LINANÄS
                         </a>
                     </div>
@@ -207,7 +207,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>1300$</b><br>Pair of sofas that come with the aesthetic table</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             EKTORP
                         </a>
                     </div>
@@ -222,7 +222,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>800$</b><br>L-type sofa with the stool included</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             NYHAMN
                         </a>
                     </div>
@@ -237,7 +237,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>620$</b><br>Luxurious Apple-Wood table</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             VINLIDEN
                         </a>
                     </div>
@@ -252,7 +252,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>200$</b><br>Aesthetic chair with a small table and small chair</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             SÖDERHAMN
                         </a>
                     </div>
@@ -267,7 +267,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>880$</b><br>Huge shelf with a large capacity</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             HEMNES
                         </a>
                     </div>
@@ -282,7 +282,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>300$</b><br>Perfect cabinnet for your hallway</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             FRIHETEN
                         </a>
                     </div>
@@ -297,7 +297,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>200$</b><br>Your personal desk for everyday work</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             SÖDERHAMN
                         </a>
                     </div>
@@ -312,7 +312,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>150$</b><br>Beautiful table that goes well with every furniture</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             HOLMSUND
                         </a>
                     </div>
@@ -327,7 +327,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>400$</b><br>Couch with a small stool/table</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             VRETSTORP
                         </a>
                     </div>
@@ -342,7 +342,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>750$</b><br>Luxurious beige L-type sofa</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             STRANDMON
                         </a>
                     </div>
@@ -357,7 +357,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>100$</b><br>Simple yet aesthetic table</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             FRÖSLÖV
                         </a>
                     </div>
@@ -372,7 +372,7 @@
                             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>699.90$</b><br>Your resting place</p>
                         </div>
                         <!--text--------->
-                        <a href="#">
+                        <a href="products.php">
                             KIVIK
                         </a>
                     </div>
@@ -447,10 +447,8 @@
             <div class="about-contentBox">
                 <div class="about-content">
                     <h1>About Us</h1>
-                    <p>HomeGoods is a global home furnishing brand that brings affordability,
-                        design and comfort to people all over the world. We may have come a long way since our humble beginnings,
-                         but our vision remains the same: to create a better everyday life for the many people.</p>
-                    <a href="about_us.html">Read more</a>
+                    
+                    <a href="about-us.php">Read more</a>
                 </div>
             </div>
         </div>
@@ -483,7 +481,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#">Buy Now</a>
+                    <a href="products.php">Buy Now</a>
                 </div>
 
             </div>
@@ -510,7 +508,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#">Buy Now</a>
+                    <a href="products.php">Buy Now</a>
                 </div>
             </div>
             <!-- --------------box-3-------------- -->
@@ -535,7 +533,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#">Buy Now</a>
+                    <a href="products.php">Buy Now</a>
                 </div>
             </div>
             <!-- --------------box-4-------------- -->
@@ -560,7 +558,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#">Buy Now</a>
+                    <a href="products.php">Buy Now</a>
                 </div>
             </div>
             <!-- --------------box-5-------------- -->
@@ -585,7 +583,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#">Buy Now</a>
+                    <a href="products.php">Buy Now</a>
                 </div>
             </div>
             <!-- --------------box-6-------------- -->
@@ -610,7 +608,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#">Buy Now</a>
+                    <a href="products.php">Buy Now</a>
                 </div>
             </div>
             <!-- --------------box-7-------------- -->
@@ -635,7 +633,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#">Buy Now</a>
+                    <a href="products.php">Buy Now</a>
                 </div>
             </div>
             <!-- --------------box-8-------------- -->
@@ -660,7 +658,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <a href="#">Buy Now</a>
+                    <a href="products.php">Buy Now</a>
                 </div>
             </div>
         </div>

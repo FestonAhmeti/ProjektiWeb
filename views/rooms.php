@@ -127,35 +127,35 @@
       <div class="collection-div">
           <div id="left-side">
               
-            <a href="new.html" id="anchor" ><div class="buttons" id="button1"  ></div></a>
+            <a href="http://localhost:8080/ProjektiWeb/views/view-product.php?pid=10035" id="anchor" ><div class="buttons" id="button1"  ></div></a>
             <div id="button1-div">
                 <H6>NEW</H6>
                 <h5>MATCHSPEL</h5>
                 <p>Gaming Chair</p>
                 <h4>150$</h4>
             </div>
-            <a href="new.html" id="anchor2"><div class="buttons" id="button2"></div></a>
+            <a href="http://localhost:8080/ProjektiWeb/views/view-product.php?pid=10032" id="anchor2"><div class="buttons" id="button2"></div></a>
             <div id="button2-div">
                 <H6>NEW</H6>
                 <h5>LEDBERG</h5>
                 <p>Led Lights</p>
                 <h4>10$</h4>
             </div>
-            <a href="new.html" id="anchor3"><div class="buttons" id="button3"></div></a>
+            <a href="http://localhost:8080/ProjektiWeb/views/view-product.php?pid=10033" id="anchor3"><div class="buttons" id="button3"></div></a>
             <div id="button3-div">
                 <H6>NEW</H6>
                 <h5>UPPSPEL</h5>
                 <p>Wheeled Drawer</p>
                 <h4>100$</h4>
             </div>
-            <a href="new.html" id="anchor4"><div class="buttons" id="button4"></div></a>
+            <a href="http://localhost:8080/ProjektiWeb/views/view-product.php?pid=10034" id="anchor4"><div class="buttons" id="button4"></div></a>
             <div id="button4-div">
                 <H6>NEW</H6>
                 <h5>LÅNESPELARE</h5>
                 <p>Cup Holder</p>
                 <h4>10$</h4>
             </div>
-            <a href="new.html" id="anchor5"><div class="buttons" id="button5"></div></a>
+            <a href="http://localhost:8080/ProjektiWeb/views/view-product.php?pid=10031" id="anchor5"><div class="buttons" id="button5"></div></a>
             <div id="button5-div">
                 <H6>NEW</H6>
                 <h5>UPPSPEL</h5>
@@ -171,7 +171,7 @@
                   we have designed gaming tables, gaming chairs and accessories 
                   that combine high performance, great ergonomics and a modern look.
               </p>
-              <button><a href="#">Check!</a></button>
+              <button><a href="products.php">Check!</a></button>
           </div>
       </div>
     </div>
@@ -184,21 +184,21 @@
       </div>
       <div id="content">
 
-        <div class="one"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="two"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="three"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="four"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="five"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="six"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="seven"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="eight"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="nine"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="ten"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="eleven"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="twelve"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="thirteen"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="fourteen"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="fifteen"><button><a href="#"><b>Check!</b></a></button></div>
+        <div class="one"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="two"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="three"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="four"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="five"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="six"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="seven"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="eight"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="nine"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="ten"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="eleven"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="twelve"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="thirteen"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="fourteen"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="fifteen"><button><a href="products.php"><b>Check!</b></a></button></div>
         <div class="sixteen"></div>
         
       </div>
@@ -208,21 +208,21 @@
     <div id="products-grid-2">
       <div id="content2">
 
-        <div class="one"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="two"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="three"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="four"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="five"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="six"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="seven"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="eight"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="nine"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="ten"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="eleven"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="twelve"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="thirteen"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="fourteen"><button><a href="#"><b>Check!</b></a></button></div>
-        <div class="fifteen"><button><a href="#"><b>Check!</b></a></button></div>
+        <div class="one"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="two"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="three"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="four"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="five"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="six"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="seven"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="eight"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="nine"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="ten"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="eleven"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="twelve"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="thirteen"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="fourteen"><button><a href="products.php"><b>Check!</b></a></button></div>
+        <div class="fifteen"><button><a href="products.php"><b>Check!</b></a></button></div>
         <div class="sixteen"></div>
         
       </div>
@@ -233,22 +233,22 @@
         <h2>New ideas to improve your home!</h2>
         <div id="rooms-div-container">
           <div id="one">
-            <a href=""><button>Living Room</button></a>
+            <a href="products.php"><button>Living Room</button></a>
           </div>
           <div id="two">
-            <a href=""><button>Bedroom</button></a>
+            <a href="products.php"><button>Bedroom</button></a>
           </div>
           <div id="three">
-            <a href=""><button>Kitchen</button></a>
+            <a href="products.php"><button>Kitchen</button></a>
           </div>
           <div id="four">
-            <a href=""><button>Bathroom</button></a>
+            <a href="products.php"><button>Bathroom</button></a>
           </div>
           <div id="five">
-            <a href=""><button>Dining Room</button></a>
+            <a href="products.php"><button>Dining Room</button></a>
           </div>
           <div id="six">
-            <a href=""><button>Lightning</button></a>
+            <a href="products.php"><button>Lightning</button></a>
           </div>
         </div>
     </div>

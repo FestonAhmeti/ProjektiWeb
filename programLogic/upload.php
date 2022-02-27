@@ -25,7 +25,7 @@ if(isset($_POST['add-product-btn'])){
     // Variabla per filen/foton e uploaduar 
     $fileTmpName = $_FILES['image']['tmp_name']; //emri i perkohshem i file
     $imageName = $_FILES['image']['name']; //emri aktual i file
-    $fileDestination = '../images/produktet/'.$imageName; // destinacioni ku ruhet file
+    $fileDestination = '../images/ImagesDb/'.$imageName; // destinacioni ku ruhet file
 
     move_uploaded_file($fileTmpName, $fileDestination); // metode per te zhvendosur filein ne server
 
@@ -52,29 +52,7 @@ else if(isset($_POST['add-category-btn'])) {
     $pmapper->insertCategory($kategoria);
     header("Location: ../views/dashboard.php?action=add-category&upload=success");
 }
-// Nese eshte shtypur butoni per te shtuar foto ne slider, atehere procedo brenda kushtit
-else if(isset($_POST['add-slider-img'])){
-    $image = $_FILES['slider-image'];
-    $fileTmpName = $_FILES['slider-image']['tmp_name'];
-    $imageName = $_FILES['slider-image']['name'];
-    $fileDestination = '../images/slider/'.$imageName;
 
-    move_uploaded_file($fileTmpName, $fileDestination);
-    $mapper = new ProductMapper();
-    $mapper->insertIntoSlider($fileDestination);
-    header("Location: ../views/dashboard.php?action=add-slider-images&upload=success");
-}
-else if(isset($_POST['add-brand-img'])){
-    $image = $_FILES['brand-image'];
-    $fileTmpName = $_FILES['brand-image']['tmp_name'];
-    $imageName = $_FILES['brand-image']['name'];
-    $fileDestination = '../images/brendet/'.$imageName;
-
-    move_uploaded_file($fileTmpName, $fileDestination);
-    $mapper = new ProductMapper();
-    $mapper->insertIntoBrands($fileDestination);
-    header("Location: ../views/dashboard.php?action=add-brand-images&upload=success");
-}
 // Nese eshte shtypur butoni per te derguar mesazh, atehere procedo
 else if(isset($_POST['send-msg'])){
     $name = $_POST['name'];
@@ -84,7 +62,7 @@ else if(isset($_POST['send-msg'])){
 
     $mapper = new MessageMapper();
     $mapper->insertMessage($name, $lastname, $email, $msg);
-    header("Location: ../views/kontakt.php?messagesend=success");
+    header("Location: ../views/contact-us.php?messagesend=success");
 }
 else if(isset($_GET['action']) && $_GET['action'] == 'add-to-cart'){
     if(isset($_GET['product-id'])){

@@ -51,16 +51,16 @@
 
         <div id="product-filter">
             <form method="GET" action="<?= $_SERVER['PHP_SELF']?>">
-                <select name="filter">
-                    <option value="all">Të gjitha</option>
-                    <option value="price-low-to-high">Cmimi: poshtë-lart</option>
-                    <option value="price-high-to-low">Cmimi: lart-poshtë</option>
-                    <option value="name-A-Z">Emri: A-Z</option>
-                    <option value="name-Z-A">Emri: Z-A</option>
-                    <option value="newest">Më të fundit</option>
-                    <option value="oldest">Më të vjetrat</option>
+                <select name="filter" style="width: 200px; height: 30px;">
+                    <option value="all">All</option>
+                    <option value="price-low-to-high">Price: low to high</option>
+                    <option value="price-high-to-low">Price: high to low</option>
+                    <option value="name-A-Z">Name: A-Z</option>
+                    <option value="name-Z-A">Name: Z-A</option>
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
                 </select>
-                <input type="submit" value="Filtro">
+                <input type="submit" value="Filter" id="button-filter" style="height: 30px; width:50px; background-color: #224f79; color: white; font-size:14px;">
             </form>
         </div>
 
@@ -77,7 +77,7 @@
                         <div>
                             <h3><?php echo $product['emri']; ?></h3>
                             <h2><?php echo $product['cmimi']; ?>&euro;</h2>
-                            <a class="button" href="<?php echo "view-product.php?pid=$pid" ?>">Shiko Produktin</a>
+                            <a class="button" href="<?php echo "view-product.php?pid=$pid" ?>">Check Product</a>
                         </div>
                     </div>
                 <?php } ?>

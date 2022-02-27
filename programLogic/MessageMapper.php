@@ -67,7 +67,7 @@ class MessageMapper extends DatabaseConfig {
     }
 
     public function getText(){
-        $this->query = "select * from rrethnesh";
+        $this->query = "select * from aboutus";
         $statement = $this->connection->prepare($this->query);
         $statement->execute();
         $result = $statement->fetch(PDO::FETCH_ASSOC);
@@ -75,7 +75,7 @@ class MessageMapper extends DatabaseConfig {
     }
 
     public function updateText($id, $text){
-        $this->query = "update rrethnesh set text=:newtext where id=:id";
+        $this->query = "update aboutus set text=:newtext where id=:id";
         $statement = $this->connection->prepare($this->query);
         $statement->bindParam(":id", $id);
         $statement->bindParam(":newtext", $text);

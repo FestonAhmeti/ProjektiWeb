@@ -16,6 +16,7 @@
     color: whitesmoke;
     font-family: 'Kanit', sans-serif;
     font-size: 15pt;
+    background-color: transparent !important;
 }
 
 #l-nav{
@@ -69,7 +70,7 @@
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
-    margin-left: 135px;
+    margin-left: 170px;
     font-size: 15pt;
     list-style-type: none;
     justify-content: space-around;
@@ -326,7 +327,7 @@ header {
 }
 
 .products-panel .square div:nth-child(2) a:hover {
-    background-color: #5c1111;
+    background-color: #224f79;
     color: white;
     border: none;
     cursor: pointer;
@@ -336,6 +337,10 @@ header {
     max-width: 79%;
     margin: auto;
     margin-top: 50px;
+}
+
+#button-filter{
+    height: 30px;
 }
 
 /* ------------------------ Footer Start ------------------ */

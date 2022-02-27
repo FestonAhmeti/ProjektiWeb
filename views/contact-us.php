@@ -59,39 +59,54 @@
                 <div class="contact-form">
                 <span class="circle one"></span>
                 <span class="circle two"></span>
-
-                <form   onsubmit="return validate()" autocomplete="off">
+s
+                <form   onsubmit="return validate()" method="POST" action="../programLogic/upload.php" autocomplete="off">
                     <h3 class="title">Contact us</h3>
+
                     <div id="error_message"></div>
                     <div class="input-container">
-                    <input type="text" name="name" id="name" class="input" />
-                    <label for="">Username</label>
-                    <span>Username</span>
+                        <input id="emriPlote" type="text" name="name" class="input" />
+                        <label for="name">Name</label>
+                        <span>Name</span>
                     </div>
+
                     <div id="error_message1"></div>
                     <div class="input-container">
-                    <input type="email" name="email" id="email" class="input" />
-                    <label for="">Email</label>
-                    <span>Email</span>
+                        <input id="mbiemri" type="text" name="lastname" class="input">
+                        <label for="name">Lastname</label>
+                        <span>Lastname</span>
                     </div>
+
                     <div id="error_message2"></div>
                     <div class="input-container">
-                    <input type="tel" name="phone" id="phone" class="input" />
-                    <label for="">Phone</label>
-                    <span>Phone</span>
+                        <input id="emaili" type="email" name="email" class="input">
+                        <label for="email">Email</label>
+                        <span>Email</span>
                     </div>
+
                     <div id="error_message3"></div>
                     <div class="input-container textarea">
-                    <textarea name="message" id="message" class="input"></textarea>
-                    <label for="">Message</label>
-                    <span>Message</span>
+                        <textarea id="mesazhi" type="text" name="msg" class="input"></textarea>
+                        <label for="mesazhi">Message</label>
+                        <span>Message</span>
                     </div>
-                    <input type="submit" value="Send" class="btn" />
+                    <input type="submit"  id="dergo" value="Send"  name="send-msg" class="button" style=" padding: 0.6rem 1.3rem;
+                        background-color: #fff;
+                        border: 2px solid #fafafa;
+                        font-size: 0.95rem;
+                        color: #000000;
+                        line-height: 1;
+                        border-radius: 25px;
+                        outline: none;
+                        cursor: pointer;
+                        transition: 0.3s;
+                        margin: 0;"/>
+
                 </form>
                 </div>
             </div>
             </div>
-            
+
             <?php if(isset($_GET['messagesend']) && $_GET['messagesend'] == 'success'){
                 echo '<script>alert("Mesazhi juaj u dergua me sukses")</script>';
             } ?>

@@ -40,7 +40,7 @@ if(isset($_GET['pid'])){
                 </div>
                 <div>
                     <p><b>Category: </b><?= $product['kategoria']?></p>
-                    <p><b>Quantity: </b><?= $product['sasia']?> artikuj</p>
+                    <p><b>Quantity: </b><?= $product['sasia']?> products</p>
                     <p><b>Description: </b><?= $product['pershkrimi']?></p>
                 </div>
                 <div>
@@ -60,7 +60,7 @@ if(isset($_GET['pid'])){
                             <p id="nostock">Not in stock!</p>
                         <?php }
                         else { ?>
-                            <a href=" <?php echo "../programLogic/upload.php?action=add-to-cart&product-id=".$product['id'] ?>">Shto në shportë</a>
+                            <a href=" <?php echo "../programLogic/upload.php?action=add-to-cart&product-id=".$product['id'] ?>">Add to Cart</a>
                         <?php }
                     }
                     else if($product['sasia'] == 0){ ?>
@@ -68,7 +68,7 @@ if(isset($_GET['pid'])){
                     <?php } else if(!isset($_SESSION['is_logged_in'])) { ?>
                         <a href="login.php" class="button">Log In to add to cart!</a>
                     <?php } else { ?>
-                        <a href=" <?php echo "../programLogic/upload.php?action=add-to-cart&product-id=".$product['id'] ?>">Shto në shportë</a>
+                        <a href=" <?php echo "../programLogic/upload.php?action=add-to-cart&product-id=".$product['id'] ?>">Add to Cart</a>
                     <?php } ?>
                 </div>
                 <div>
