@@ -404,10 +404,10 @@
   opacity: 1;
   animation: stretch 1.2s forwards;
 }
-.products-box{
+.products-box {
     min-height: 330px;
     background: inherit;
-    max-width: 300px;
+    min-width: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -415,7 +415,7 @@
     box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
     background-color: rgb(59, 58, 58);
     border-radius: 5px;
-    /*overflow: hidden;*/
+    /* overflow: hidden; */
     border-top: 3px solid #292929;
     transition: all 0.5s ease-in-out 0s;
     margin-top: 20px;
