@@ -2,7 +2,7 @@
     <html>
     <head>
     <link rel="stylesheet" href="../css/about-us.css">
-        
+        <title>About Us | Homegoods</title>
     </head>
     <body>
 <?php include '../components/header.php';

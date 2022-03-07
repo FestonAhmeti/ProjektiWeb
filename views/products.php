@@ -34,7 +34,7 @@
     <html>
     <head>
     <link rel="stylesheet" href="../css/products.css">
-        
+        <title>Products | Homegoods</title>
     </head>
     <body>
     <div id="main">

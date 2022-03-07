@@ -3,7 +3,7 @@
         <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Contact Form</title>
+            <title>Contact Us | HomeGoods</title>
             <link rel="stylesheet" href="../css/contact-us.css" />
             <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
         </head>
